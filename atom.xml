@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
+  <title>sens</title>
+  <subtitle>Sound.Earth.Nature.Spirit.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-11T10:11:37.340Z</updated>
+  <updated>2016-07-12T10:22:11.317Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>dj9399</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My New Post</title>
+    <link href="http://yoursite.com/2016/07/12/My-New-Post/"/>
+    <id>http://yoursite.com/2016/07/12/My-New-Post/</id>
+    <published>2016-07-12T10:22:11.000Z</published>
+    <updated>2016-07-12T10:22:11.317Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
