@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/2016/07/15/hexo%E5%86%99%E6%96%87%E7%AB%A0/</loc>
     
-    <lastmod>2016-07-15T09:44:12.266Z</lastmod>
+    <lastmod>2016-07-15T10:23:04.753Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/07/15/%E5%AE%89%E8%A3%85NexT%E4%B8%BB%E9%A2%98/</loc>
+    <loc>http://yoursite.com/2016/07/12/%E5%AE%89%E8%A3%85NexT%E4%B8%BB%E9%A2%98/</loc>
     
-    <lastmod>2016-07-15T09:37:52.330Z</lastmod>
+    <lastmod>2016-07-15T10:23:00.821Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2016-07-15T09:44:12.266Z</lastmod>
     
   </url>
   
