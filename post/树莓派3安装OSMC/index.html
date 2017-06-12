@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="sens">
 <meta property="og:description" content="树莓派3,高清投影">
 <meta property="og:image" content="https://ooo.0o0.ooo/2017/03/23/58d37f5f5a9b6.jpg">
-<meta property="og:updated_time" content="2017-05-09T03:33:55.037Z">
+<meta property="og:updated_time" content="2017-05-18T10:18:54.041Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树莓派3安装OSMC">
 <meta name="twitter:description" content="树莓派3,高清投影">
@@ -304,7 +304,8 @@
 
       
         <p>&#x5165;&#x624B;&#x7684;&#x6811;&#x8393;&#x6D3E;3&#x51C6;&#x5907;&#x505A;&#x6210;&#x5F71;&#x89C6;&#x4E2D;&#x5FC3;&#xFF08;&#x56E0;&#x4E3A;&#x5BB6;&#x4E2D;&#x6709;&#x95F2;&#x7F6E;&#x786C;&#x76D8;&#x800C;&#x4E14;&#x6D3E;&#x7701;&#x7535;&#xFF09;&#x3002;&#x6309;&#x4E4B;&#x524D;&#x67E5;&#x770B;&#x7684;&#x8D44;&#x6599;&#xFF0C;&#x5B89;&#x88C5;OSMC&#x6700;&#x4F73;&#x3002;<br>&#x57FA;&#x672C;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x7CFB;&#x5217;&#x6559;&#x7A0B;&#x5F88;&#x8F7B;&#x677E;&#x5C31;&#x628A;OSMC&#x5B89;&#x88C5;&#x597D;&#xFF0C;<a href="http://www.ncnynl.com/archives/201607/230.html" target="_blank" rel="external">http://www.ncnynl.com/archives/201607/230.html</a></p>
-<p>&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x914D;&#x7F6E;&#x6210;&#x4E2D;&#x6587;&#xFF08;&#x4E0D;&#x7136;&#x7684;&#x8BDD;&#x4F1A;&#x6CA1;&#x6709;&#x5207;&#x6362;&#x4E2D;&#x6587;&#x7684;&#x9009;&#x9879;&#xFF09;&#xFF0C;&#x7ED3;&#x679C;&#x6210;&#x4E86;&#x4E71;&#x7801;&#xFF0C;&#x7EE7;&#x7EED;GOOGLE<a href="http://www.mz6.net/news/2015-07-29/2780.html" target="_blank" rel="external">http://www.mz6.net/news/2015-07-29/2780.html</a>&#x641E;&#x5B9A;ssh ip,&#x9ED8;&#x8BA4;&#x5E10;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#x90FD;&#x662F;osmc</p>
+<p>&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x914D;&#x7F6E;&#x6210;&#x4E2D;&#x6587;&#xFF08;&#x4E0D;&#x7136;&#x7684;&#x8BDD;&#x4F1A;&#x6CA1;&#x6709;&#x5207;&#x6362;&#x4E2D;&#x6587;&#x7684;&#x9009;&#x9879;&#xFF09;&#xFF0C;&#x7ED3;&#x679C;&#x6210;&#x4E86;&#x4E71;&#x7801;&#xFF0C;&#x7EE7;&#x7EED;GOOGLE<a href="http://www.mz6.net/news/2015-07-29/2780.html" target="_blank" rel="external">http://www.mz6.net/news/2015-07-29/2780.html</a>&#x641E;&#x5B9A;</p>
+<p>&#x9ED8;&#x8BA4;ssh&#x5E10;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#x90FD;&#x662F;osmc</p>
 <ol>
 <li><p>&#x57FA;&#x672C;&#x914D;&#x7F6E;<br>&#x8A2D;&#x7F6E; root &#x8CEC;&#x6236;&#x5BC6;&#x78BC;&#xFF0C;&#x8F38;&#x5165;&#x5169;&#x6B21;&#x65B0;&#x5BC6;&#x78BC;&#x5373;&#x53EF;</p>
 <p>$ sudo passwd root<br>&#x5553;&#x7528; root &#x8CEC;&#x6236;&#x767B;&#x9304;<br>$ sudo passwd &#x2013;unlock root</p>
@@ -315,11 +316,10 @@
 <p>&#x4E3A; PermitRootLogin yes</p>
 </li>
 <li><p>&#x5207;&#x6362;&#x8F6F;&#x4EF6;&#x6E90;<br><code>nano /etc/apt/sources.list</code></p>
-<p><code>deb http://mirror.sysu.edu.cn/raspbian/raspbian/ wheezy main non-free contrib</code></p>
-<p><code>deb http://mirrors.aliyun.com/raspbian/raspbian/ wheezy main non-free contrib</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">deb http://mirror.sysu.edu.cn/raspbian/raspbian jessie main non-free contrib</div><div class="line"></div><div class="line">deb-src http://mirror.sysu.edu.cn/raspbian/raspbian jessie main non-free contrib</div><div class="line"></div><div class="line">deb http://mirrors.aliyun.com/raspbian/raspbian/ jessie main non-free contrib</div><div class="line"></div><div class="line">deb-src http://mirrors.aliyun.com/raspbian/raspbian/ jessie main non-free contrib</div></pre></td></tr></table></figure>
 <p>&#x5207;&#x6362;&#x4E3A;&#x4E2D;&#x5C71;+&#x963F;&#x91CC;&#x6E90;&#x4E86;&#xFF0C;&#x66F4;&#x65B0;&#x4E00;&#x4E0B;<br><code>#apt-get update</code></p>
 <p><code>#apt-get upgrade</code></p>
-</li>
+<h3 id="osmc&#x7CFB;&#x7EDF;&#x4E0B;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6709;&#x65F6;&#x6267;&#x884C;&#x4E0D;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x6362;&#x6210;apt-upgrade"><a href="#osmc&#x7CFB;&#x7EDF;&#x4E0B;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6709;&#x65F6;&#x6267;&#x884C;&#x4E0D;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x6362;&#x6210;apt-upgrade" class="headerlink" title="osmc&#x7CFB;&#x7EDF;&#x4E0B;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6709;&#x65F6;&#x6267;&#x884C;&#x4E0D;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x6362;&#x6210;apt upgrade"></a>osmc&#x7CFB;&#x7EDF;&#x4E0B;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6709;&#x65F6;&#x6267;&#x884C;&#x4E0D;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x6362;&#x6210;apt upgrade</h3></li>
 <li><p>&#x5B89;&#x88DD;&#x5E38;&#x7528;&#x5DE5;&#x5177;<br>apt-get install git apt-transport-https psmisc tree wget curl samba htop unzip zip p7zip zsh -y</p>
 </li>
 <li><p>&#x5B89;&#x88C5;&#x652F;&#x6301;NTFS&#x683C;&#x5F0F;&#x53CA;&#x81EA;&#x52A8;&#x6302;&#x8F7D;U&#x76D8;<br>&#x200B;</p>
@@ -440,7 +440,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">28</span>
+              <span class="site-state-item-count">29</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -450,7 +450,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">28</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -486,7 +486,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#osmc系统下上面的命令有时执行不了，可以换成apt-upgrade"><span class="nav-number">1.</span> <span class="nav-text">osmc系统下上面的命令有时执行不了，可以换成apt upgrade</span></a></li></ol></div>
             
           </div>
         </section>
