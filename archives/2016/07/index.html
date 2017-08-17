@@ -106,7 +106,7 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: undefined,
       author: '博主'
     }
   };
@@ -453,6 +453,22 @@
 
 
           
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+// �������±�������Ψһ����id
+id: '',
+owner: 'dj9399',
+repo: 'git@github.com:dj9399/dj9399.github.io.git',
+oauth: {
+client_id: '435966ed474af355f90b',
+client_secret: '823f6a38ab597207732b6900bd08ef9463165d70',
+},
+})
+gitment.render('container')
+</script>
 
         </div>
         
