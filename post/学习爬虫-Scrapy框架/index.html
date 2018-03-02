@@ -1,0 +1,905 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="python,study," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="sens" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="学习爬虫-Scrapy框架">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习爬虫-Scrapy框架">
+<meta property="og:url" content="http://dj9399.github.io/post/学习爬虫-Scrapy框架/index.html">
+<meta property="og:site_name" content="sens">
+<meta property="og:description" content="学习爬虫-Scrapy框架">
+<meta property="og:image" content="http://dj9399.github.io/file:///C:/Users/ADMINI~1/AppData/Local/Temp/enhtmlclip/Image.png">
+<meta property="og:image" content="http://dj9399.github.io/file:///C:/Users/ADMINI~1/AppData/Local/Temp/enhtmlclip/Image(1">
+<meta property="og:updated_time" content="2017-09-27T10:01:55.284Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习爬虫-Scrapy框架">
+<meta name="twitter:description" content="学习爬虫-Scrapy框架">
+<meta name="twitter:image" content="http://dj9399.github.io/file:///C:/Users/ADMINI~1/AppData/Local/Temp/enhtmlclip/Image.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: undefined,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://dj9399.github.io/post/学习爬虫-Scrapy框架/"/>
+
+  <title> 学习爬虫-Scrapy框架 | sens </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">sens</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Sound.Earth.Nature.Spirit.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                学习爬虫-Scrapy框架
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-09-27T18:30:11+08:00" content="2017-09-27">
+              2017-09-27
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="&#x4E00;&#x3001;&#x4ECB;&#x7ECD;"><a href="#&#x4E00;&#x3001;&#x4ECB;&#x7ECD;" class="headerlink" title="&#x4E00;&#x3001;&#x4ECB;&#x7ECD;"></a>&#x4E00;&#x3001;&#x4ECB;&#x7ECD;</h2><p>Scrapy&#x662F;&#x7528;&#x7EAF;Python&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x4E2A;&#x4E3A;&#x4E86;&#x722C;&#x53D6;&#x7F51;&#x7AD9;&#x6570;&#x636E;&#x3001;&#x63D0;&#x53D6;&#x7ED3;&#x6784;&#x6027;&#x6570;&#x636E;&#x800C;&#x7F16;&#x5199;&#x7684;&#x5E94;&#x7528;&#x6846;&#x67B6;&#xFF0C;&#x7528;&#x9014;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#x3002;&#x6846;&#x67B6;&#x7684;&#x529B;&#x91CF;&#xFF0C;&#x7528;&#x6237;&#x53EA;&#x9700;&#x8981;&#x5B9A;&#x5236;&#x5F00;&#x53D1;&#x51E0;&#x4E2A;&#x6A21;&#x5757;&#x5C31;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x7684;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x722C;&#x866B;&#xFF0C;&#x7528;&#x6765;&#x722C;&#x53D6;&#x7F51;&#x9875;&#x5185;&#x5BB9;&#x4EE5;&#x53CA;&#x5404;&#x79CD;&#x56FE;&#x7247;&#xFF0C;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x3002;Scrapy&#x4F7F;&#x7528;&#x4E86;Twisted&#x5F02;&#x6B65;&#x7F51;&#x7EDC;&#x6846;&#x67B6;&#x6765;&#x5904;&#x7406;&#x7F51;&#x7EDC;&#x901A;&#x8BAF;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;&#x6211;&#x4EEC;&#x7684;&#x4E0B;&#x8F7D;&#x901F;&#x5EA6;&#xFF0C;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x5F02;&#x6B65;&#x6846;&#x67B6;&#xFF0C;&#x5E76;&#x4E14;&#x5305;&#x542B;&#x4E86;&#x5404;&#x79CD;&#x4E2D;&#x95F4;&#x4EF6;&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x7684;&#x5B8C;&#x6210;&#x5404;&#x79CD;&#x9700;&#x6C42;&#x3002;</p>
+<p>Scrapy&#x67B6;&#x6784;&#x56FE;<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/enhtmlclip/Image.png" alt="img">Scrapy Engine&#xFF08;&#x5F15;&#x64CE;&#xFF09;&#xFF1A;&#x8D1F;&#x8D23;Spider&#x3001;ItemPipeline&#x3001;Downloader&#x3001;Scheduler&#x4E2D;&#x95F4;&#x7684;&#x901A;&#x8BAF;&#xFF0C;&#x4FE1;&#x53F7;&#x3001;&#x6570;&#x636E;&#x4F20;&#x9012;&#x7B49;&#x3002;Scheduler&#xFF08;&#x8C03;&#x5EA6;&#x5668;&#xFF09;&#xFF1A;&#x5B83;&#x8D1F;&#x8D23;&#x63A5;&#x53D7;&#x5F15;&#x64CE;&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x7684;Resquest&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x6309;&#x7167;&#x4E00;&#x5B9A;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6574;&#x7406;&#x6392;&#x5217;&#xFF0C;&#x5165;&#x961F;&#xFF0C;&#x5F53;&#x5F15;&#x64CE;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x4EA4;&#x8FD8;&#x7ED9;&#x5F15;&#x64CE;&#x3002;<br>Downloader&#xFF08;&#x4E0B;&#x8F7D;&#x5668;&#xFF09;&#xFF1A;&#x8D1F;&#x8D23;&#x4E0B;&#x8F7D;Scrapy Engine&#xFF08;&#x5F15;&#x64CE;&#xFF09;&#x53D1;&#x9001;&#x7684;&#x6240;&#x6709;Resquests&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x83B7;&#x53D6;&#x5230;&#x7684;Responses&#x4EA4;&#x8FD8;&#x7ED9;Scrapy Engine&#xFF08;&#x5F15;&#x64CE;&#xFF09;&#xFF0C;&#x7531;&#x5F15;&#x64CE;&#x4EA4;&#x7ED9;Spider&#x6765;&#x5904;&#x7406;&#x3002;Spider&#xFF08;&#x722C;&#x866B;&#xFF09;&#xFF1A;&#x5B83;&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x6240;&#x6709;Responses&#xFF0C;&#x4ECE;&#x4E2D;&#x5206;&#x6790;&#x63D0;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x83B7;&#x53D6;Item&#x5B57;&#x6BB5;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5C06;&#x9700;&#x8981;&#x8DDF;&#x8FDB;&#x7684;URL&#x63D0;&#x4EA4;&#x7ED9;&#x5F15;&#x64CE;&#xFF0C;&#x518D;&#x6B21;&#x8FDB;&#x5165;Scheduler&#xFF08;&#x8C03;&#x5EA6;&#x5668;&#xFF09;&#x3002;<br>Item Pipeline&#xFF08;&#x7BA1;&#x9053;&#xFF09;&#xFF1A;&#x5B83;&#x8D1F;&#x8D23;&#x5904;&#x7406;Spider&#x4E2D;&#x83B7;&#x53D6;&#x5230;&#x7684;Item&#xFF0C;&#x5E76;&#x8FDB;&#x884C;&#x540E;&#x671F;&#x5904;&#x7406;&#xFF08;&#x8BE6;&#x7EC6;&#x5206;&#x6790;&#x3001;&#x8FC7;&#x6EE4;&#x3001;&#x5B58;&#x50A8;&#x7B49;&#xFF09;&#x7684;&#x5730;&#x65B9;&#x3002;<br>Downloader Middlewares&#xFF08;&#x4E0B;&#x8F7D;&#x4E2D;&#x95F4;&#x4EF6;&#xFF09;&#xFF1A;&#x4F60;&#x53EF;&#x4EE5;&#x5F53;&#x4F5C;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x6269;&#x5C55;&#x4E0B;&#x8F7D;&#x529F;&#x80FD;&#x7684;&#x7EC4;&#x4EF6;&#x3002;<br>Spider Middlewares&#xFF08;Spider&#x4E2D;&#x95F4;&#x4EF6;&#xFF09;&#xFF1A;&#x4F60;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x6269;&#x5C55;&#x548C;&#x64CD;&#x4F5C;&#x5F15;&#x64CE;&#x548C;Spider&#x4E2D;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x529F;&#x80FD;&#x7EC4;&#x4EF6;&#xFF08;&#x6BD4;&#x5982;&#x8FDB;&#x5165;Spider&#x7684;Responses&#x548C;&#x4ECE;Spider&#x51FA;&#x53BB;&#x7684;Resquests&#xFF09;&#x3002;</p>
+<p>&#x5236;&#x4F5C;Scrapy&#x722C;&#x866B;&#x4E00;&#x5171;&#x9700;&#x8981;4&#x6B65;&#xFF1A;&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF08;scrapy startproject &#x9879;&#x76EE;&#x540D;&#xFF09;&#xFF1A;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x722C;&#x866B;&#x9879;&#x76EE;&#x660E;&#x786E;&#x76EE;&#x6807;&#xFF08;&#x7F16;&#x5199;items.py&#xFF09;&#xFF1A;&#x660E;&#x786E;&#x4F60;&#x60F3;&#x8981;&#x722C;&#x53D6;&#x7684;&#x76EE;&#x6807;&#x5236;&#x4F5C;&#x722C;&#x866B;&#xFF08;spiders/xxxspider.py&#xFF09;&#xFF1A;&#x5236;&#x4F5C;&#x722C;&#x866B;&#x5F00;&#x59CB;&#x722C;&#x53D6;&#x7F51;&#x9875;&#x5B58;&#x50A8;&#x5185;&#x5BB9;&#xFF08;pipelines.py&#xFF09;&#xFF1A;&#x8BBE;&#x8BA1;&#x7BA1;&#x9053;&#x5B58;&#x50A8;&#x722C;&#x53D6;&#x5185;&#x5BB9;&#x5165;&#x95E8;&#x6848;&#x4F8B;&#x76EE;&#x6807;&#xFF1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Scrapy&#x9879;&#x76EE;&#x5B9A;&#x4E49;&#x63D0;&#x53D6;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#xFF08;Item&#xFF09;&#x7F16;&#x5199;&#x722C;&#x53D6;&#x7F51;&#x7AD9;&#x7684;Spider&#x5E76;&#x63D0;&#x53D6;&#x51FA;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#xFF08;Item&#xFF09;&#x7F16;&#x5199;Item Pipelines&#x6765;&#x5B58;&#x50A8;&#x63D0;&#x53D6;&#x5230;&#x7684;Item&#xFF08;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#xFF09;&#x4E00;&#x3001;&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF08;scrapy startproject&#xFF09;&#x5728;&#x5F00;&#x59CB;&#x722C;&#x53D6;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Scrapy&#x9879;&#x76EE;&#x3002;&#x8FDB;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#xFF1A;1<code>scrapy startproject mySpider</code>&#x5176;&#x4E2D;&#xFF0C;mySpider&#x4E3A;&#x9879;&#x76EE;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5C06;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;mySpider&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5927;&#x81F4;&#x5982;&#x4E0B;&#xFF1A;<img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/enhtmlclip/Image(1" alt="img">.png)</p>
+<p>&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x5404;&#x4E2A;&#x4E3B;&#x8981;&#x6587;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#xFF1A;</p>
+<p>scrapy.cfg&#xFF1A;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<br>mySpider/&#xFF1A;&#x9879;&#x76EE;&#x7684;Python&#x6A21;&#x5757;&#xFF0C;&#x5C06;&#x4F1A;&#x4ECE;&#x8FD9;&#x91CC;&#x5F15;&#x7528;&#x4EE3;&#x7801;<br>mySpider/items.py&#xFF1A;&#x9879;&#x76EE;&#x7684;&#x76EE;&#x6807;&#x6587;&#x4EF6;<br>mySpider/middlewares.py&#xFF1A;&#x9879;&#x76EE;&#x7684;&#x7BA1;&#x9053;&#x6587;&#x4EF6;<br>mySpider/pipelines.py&#xFF1A;&#x9879;&#x76EE;&#x7684;&#x7BA1;&#x9053;&#x6587;&#x4EF6;<br>mySpider/settings.py&#xFF1A;&#x9879;&#x76EE;&#x7684;&#x8BBE;&#x7F6E;&#x6587;&#x4EF6;<br>mySpider/spiders/&#xFF1A;&#x5B58;&#x50A8;&#x722C;&#x866B;&#x4EE3;&#x7801;&#x76EE;&#x5F55;</p>
+<h2 id="&#x4E8C;&#x3001;&#x5165;&#x95E8;&#x5B9E;&#x4F8B;"><a href="#&#x4E8C;&#x3001;&#x5165;&#x95E8;&#x5B9E;&#x4F8B;" class="headerlink" title="&#x4E8C;&#x3001;&#x5165;&#x95E8;&#x5B9E;&#x4F8B;"></a>&#x4E8C;&#x3001;&#x5165;&#x95E8;&#x5B9E;&#x4F8B;</h2><p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x53C2;&#x8003;&#x81EA;<a href="https://doc.scrapy.org/en/latest/index.html" target="_blank" rel="external">Scrapy &#x5B98;&#x7F51;</a>:<br>&#x6700;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x968F;&#x4FBF;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</p>
+<p>quotes_spider.py</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line">class QuotesSpider(scrapy.Spider):</div><div class="line">    name = &quot;quotes&quot;</div><div class="line">    start_urls = [</div><div class="line">    &apos;http://quotes.toscrape.com/tag/humor/&apos;,</div><div class="line">    ]</div><div class="line">    def parse(self, response):</div><div class="line">        for quote in response.css(&apos;div.quote&apos;):</div><div class="line">            yield {</div><div class="line">            &apos;text&apos;: quote.css(&apos;span.text::text&apos;).extract_first(),</div><div class="line">            &apos;author&apos;: quote.xpath(&apos;span/small/text()&apos;).extract_first(),</div><div class="line">            }</div><div class="line">        next_page = response.css(&apos;li.next a::attr(&quot;href&quot;)&apos;).extract_first()</div><div class="line">        </div><div class="line">        if next_page is not None:</div><div class="line">            next_page = response.urljoin(next_page)</div><div class="line">            yield scrapy.Request(next_page, callback=self.parse)</div></pre></td></tr></table></figure>
+<p>&#x8FD0;&#x884C;&#xFF1A;scrapy runspider quotes_spider.py -o quotes.json<br>&#x5F53;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;quotes.json&#x6587;&#x4EF6;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x6570;&#x636E;&#x662F;&#x4EE5;JSON&#x683C;&#x5F0F;&#x4FDD;&#x5B58;&#x7684;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x62EC;text&#x548C;author&#x5B57;&#x6BB5;&#xFF0C;&#x5C31;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">[{</div><div class="line">    &quot;author&quot;: &quot;Jane Austen&quot;,</div><div class="line">    &quot;text&quot;: &quot;\u201cThe person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.\u201d&quot;</div><div class="line">},</div><div class="line">{</div><div class="line">    &quot;author&quot;: &quot;Groucho Marx&quot;,</div><div class="line">    &quot;text&quot;: &quot;\u201cOutside of a dog, a book is man&apos;s best friend. Inside of a dog it&apos;s too dark to read.\u201d&quot;</div><div class="line">},</div><div class="line">{</div><div class="line">    &quot;author&quot;: &quot;Steve Martin&quot;,</div><div class="line">    &quot;text&quot;: &quot;\u201cA day without sunshine is like, you know, night.\u201d&quot;</div><div class="line">},</div><div class="line">...]</div></pre></td></tr></table></figure>
+<p>&#x5982;&#x679C;&#x7F51;&#x9875;&#x4E3A;&#x4E2D;&#x6587;&#xFF0C;&#x5F97;&#x5230;&#x7684;JSON&#x6587;&#x4EF6;&#x4F1A;&#x6210;&#x4E71;&#x7801;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;scrapy&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x662F;Unicode&#x7F16;&#x7801;&#x3002;&#x5728;setting&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;&#xFF1A;FEED_EXPORT_ENCODING = &#x2018;utf-8&#x2019; &#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;</p>
+<p>&#x5F53;&#x4F60;&#x8FD0;&#x884C;<code>scrapy runspider quotes_spider.py</code>&#x65F6;&#xFF0C;Scrapy&#x5C31;&#x4F1A;&#x5728;&#x5185;&#x90E8;&#x5BFB;&#x627E;&#x4E00;&#x4E2A;Spider&#x5B9A;&#x4E49;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x722C;&#x866B;&#x5F15;&#x64CE;&#x8FD0;&#x884C;&#x5B83;&#x3002;</p>
+<p>&#x722C;&#x866B;&#x4F1A;&#x901A;&#x8FC7;start_urls&#x5C5E;&#x6027;&#x5185;&#x5B9A;&#x4E49;&#x7684;url&#x5F00;&#x59CB;&#x53BB;&#x8BF7;&#x6C42;url&#xFF08;&#x672C;&#x793A;&#x4F8B;&#x4E2D;&#x4EC5;&#x4EC5;&#x662F;&#x5E7D;&#x9ED8;&#x5206;&#x7C7B;&#x4E0B;&#x7684;&#x94FE;&#x63A5;&#xFF09;&#xFF0C;&#x7136;&#x540E;call&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x56DE;&#x8C03;&#x65B9;&#x6CD5;parse&#xFF0C;&#x5E76;&#x5C06;response&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165;parse&#x3002;&#x5728;parse&#x5185;&#x90E8;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;CSS &#x9009;&#x62E9;&#x5668;&#x53BB;&#x5FAA;&#x73AF;quote&#x5143;&#x7D20;&#xFF0C;&#x751F;&#x6210;&#xFF08;yield&#xFF09;&#x4E00;&#x4E2A;Python dict&#xFF0C;&#x63D0;&#x53D6;text&#x548C;author&#xFF0C;&#x5BFB;&#x627E;&#x4E0B;&#x4E00;&#x9875;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x8BA1;&#x5212;parse&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;&#xFF0C;&#x518D;&#x6B21;&#x8BF7;&#x6C42;&#x53E6;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x4F60;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;Scrapy&#x7684;&#x4E00;&#x4E2A;&#x4E3B;&#x8981;&#x4F18;&#x52BF;&#x5C31;&#x662F;&#xFF1A;&#x8BF7;&#x6C42;&#x662F;&#x81EA;&#x52A8;&#x52A0;&#x5165;&#x8BA1;&#x5212;&#x548C;&#x5F02;&#x6B65;&#x5904;&#x7406;&#x7684;&#x3002;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;Scrapy&#x4E0D;&#x8BB8;&#x8981;&#x7B49;&#x5F85;&#x5B8C;&#x6210;&#x548C;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x53D1;&#x9001;&#x53E6;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x6216;&#x505A;&#x5176;&#x4ED6;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x8FD9;&#x4E5F;&#x610F;&#x5473;&#x7740;&#x5176;&#x4ED6;&#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x4E0B;&#x53BB;&#xFF0C;&#x5373;&#x4F7F;&#x6709;&#x4E9B;&#x8BF7;&#x6C42;&#x5931;&#x8D25;&#xFF0C;&#x6216;&#x662F;&#x5728;&#x8FD0;&#x884C;&#x671F;&#x95F4;&#x62A5;&#x9519;&#x3002;</p>
+<p>&#x8FD9;&#x4E0D;&#x4EC5;&#x80FD;&#x8BA9;&#x4F60;&#x5FEB;&#x901F;&#x7684;&#x6293;&#x53D6;&#xFF08;&#x540C;&#x65F6;&#x53D1;&#x9001;&#x591A;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x8BF7;&#x6C42;&#xFF0C;&#x4F7F;&#x7528;&#x5BB9;&#x9519;&#x673A;&#x5236;&#xFF09;&#xFF0C;Scrapy&#x4E5F;&#x80FD;&#x901A;&#x8FC7;&#x7B80;&#x5355;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x8BA9;&#x4F60;&#x7684;&#x6293;&#x53D6;&#x66F4;&#x4F18;&#x96C5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x65F6;&#x8BBE;&#x7F6E;&#x4E0B;&#x8F7D;&#x5EF6;&#x8FDF;&#xFF0C;&#x9650;&#x5236;&#x6BCF;&#x4E2A;&#x57DF;&#x540D;&#x6216;IP&#x7684;&#x540C;&#x65F6;&#x8BF7;&#x6C42;&#x6570;&#x91CF;&#xFF0C;&#x751A;&#x81F3;&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x5BC4;&#x5B58;&#x6269;&#x5C55;&#x6765;&#x81EA;&#x52A8;&#x89E3;&#x51B3;&#x4E0A;&#x8FF0;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;&#x521B;&#x5EFA;&#x9879;&#x76EE;"><a href="#&#x4E09;&#x3001;&#x521B;&#x5EFA;&#x9879;&#x76EE;" class="headerlink" title="&#x4E09;&#x3001;&#x521B;&#x5EFA;&#x9879;&#x76EE;"></a>&#x4E09;&#x3001;&#x521B;&#x5EFA;&#x9879;&#x76EE;</h2><p>&#x5728;&#x5F00;&#x59CB;&#x6293;&#x53D6;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x91CC;&#x9762;&#x653E;&#x4F60;&#x60F3;&#x8981;&#x4FDD;&#x5B58;&#x5E76;&#x8FD0;&#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy startproject tutorial</div></pre></td></tr></table></figure>
+<p>&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>tutorial</code>&#x76EE;&#x5F55;&#xFF0C;&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">tutorial/</div><div class="line">    scrapy.cfg            # deploy configuration file</div><div class="line"></div><div class="line">    tutorial/             # project&apos;s Python module, you&apos;ll import your code from here</div><div class="line">        __init__.py</div><div class="line"></div><div class="line">        items.py          # project items definition file</div><div class="line"></div><div class="line">        pipelines.py      # project pipelines file</div><div class="line"></div><div class="line">        settings.py       # project settings file</div><div class="line"></div><div class="line">        spiders/          # a directory where you&apos;ll later put your spiders</div><div class="line">            __init__.py</div></pre></td></tr></table></figure>
+<h3 id="&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;Spider"><a href="#&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;Spider" class="headerlink" title="&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;Spider"></a>&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;Spider</h3><p>Spiders&#x662F;&#x4F60;&#x5B9A;&#x4E49;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x5E76;&#x4E14;Scrapy&#x4F1A;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7C7B;&#x4ECE;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x6293;&#x53D6;&#x6570;&#x636E;&#xFF08;&#x6216;&#x4ECE;&#x4E00;&#x7EC4;&#x7F51;&#x7AD9;&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x5FC5;&#x987B;&#x7EE7;&#x627F;scrapy.Spider&#xFF0C;&#x5B9A;&#x4E49;&#x521D;&#x59CB;&#x5316;&#x8BF7;&#x6C42;&#xFF0C;&#x914D;&#x7F6E;&#x600E;&#x6837;&#x53BB;&#x8DDF;&#x8E2A;&#x9875;&#x9762;&#x94FE;&#x63A5;&#xFF0C;&#x600E;&#x6837;&#x53BB;&#x89E3;&#x6790;&#x4E0B;&#x8F7D;&#x9875;&#x9762;&#xFF0C;&#x600E;&#x6837;&#x4ECE;&#x9875;&#x9762;&#x6587;&#x672C;&#x63D0;&#x53D6;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;Spider&#x4EE3;&#x7801;&#xFF0C;&#x5728;&#x4F60;&#x7684;&#x9879;&#x76EE;&#x76EE;&#x5F55;tutorial/spiders&#x4E0B;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;quotes_spider.py&#x6587;&#x4EF6;&#xFF0C;&#x7C98;&#x8D34;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x5E76;&#x4FDD;&#x5B58;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line">class QuotesSpider(scrapy.Spider):</div><div class="line">    name = &quot;quotes&quot;</div><div class="line"></div><div class="line">    def start_requests(self):</div><div class="line">        urls = [</div><div class="line">            &apos;http://quotes.toscrape.com/page/1/&apos;,</div><div class="line">            &apos;http://quotes.toscrape.com/page/2/&apos;,</div><div class="line">        ]</div><div class="line">        for url in urls:</div><div class="line">            yield scrapy.Request(url=url, callback=self.parse)</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        page = response.url.split(&quot;/&quot;)[-2]</div><div class="line">        filename = &apos;quotes-%s.html&apos; % page</div><div class="line">        with open(filename, &apos;wb&apos;) as f:</div><div class="line">            f.write(response.body)</div><div class="line">        self.log(&apos;Saved file %s&apos; % filename)</div></pre></td></tr></table></figure>
+<p>&#x5982;&#x4F60;&#x6240;&#x89C1;&#xFF0C;&#x6211;&#x4EEC;&#x5F15;&#x5165;&#x4E86;Spider&#x7684;&#x5B50;&#x7C7B;scrapy.Spider&#xFF0C;&#x5E76;&#x4E14;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li><code>name</code>:&#x8BC6;&#x522B;Spider&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x91CC;&#x5FC5;&#x987B;&#x552F;&#x4E00;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x8BF4;&#xFF0C;&#x4F60;&#x4E0D;&#x53EF;&#x4EE5;&#x8BA9;&#x591A;&#x4E2A;Spider&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;name&#x3002;</li>
+<li><code>start_requests()</code>:&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x8FED;&#x4EE3;&#x7684;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;(&#x4F60;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;list&#xFF0C;&#x6216;&#x8005;&#x5199;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#x51FD;&#x6570;)&#xFF0C;Scrapy&#x5C06;&#x4F1A;&#x4ECE;&#x8FD9;&#x4E2A;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x5F00;&#x59CB;&#x6293;&#x53D6;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x8BF7;&#x6C42;&#x90FD;&#x4F1A;&#x5728;&#x521D;&#x59CB;&#x5316;&#x8BF7;&#x6C42;&#x5F53;&#x4E2D;&#x76F8;&#x7EE7;&#x751F;&#x6210;&#x3002;</li>
+<li><code>parse()</code>:&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x53BB;&#x5904;&#x7406;&#x6BCF;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x4E4B;&#x540E;&#x54CD;&#x5E94;&#x7684;&#x6570;&#x636E;&#x3002;response&#x53C2;&#x6570;&#x662F;TextResponse&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8FD9;&#x91CC;&#x9762;&#x4FDD;&#x5B58;&#x7740;&#x9875;&#x9762;&#x7684;&#x6587;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x4E00;&#x6B65;&#x4F7F;&#x7528;response&#x7684;&#x4E00;&#x4E9B;&#x6709;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x53BB;&#x5904;&#x7406;&#x6570;&#x636E;&#x3002;</li>
+</ul>
+<p>parse()&#x65B9;&#x6CD5;&#x901A;&#x5E38;&#x662F;&#x7528;&#x6765;&#x89E3;&#x6790;reponse&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x63D0;&#x53D6;&#x6570;&#x636E;&#x5E76;&#x5B58;&#x50A8;&#x5230;&#x5B57;&#x5178;&#x91CC;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x4F1A;&#x53BB;&#x67E5;&#x627E;&#x65B0;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x521B;&#x5EFA;&#x7684;&#x8BF7;&#x6C42;&#x3002;</p>
+<h3 id="&#x600E;&#x6837;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x7684;spider"><a href="#&#x600E;&#x6837;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x7684;spider" class="headerlink" title="&#x600E;&#x6837;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x7684;spider"></a>&#x600E;&#x6837;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x7684;spider</h3><p>&#x4E3A;&#x4E86;&#x8BA9;&#x6211;&#x4EEC;&#x7684;spider&#x5DE5;&#x4F5C;&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#x8FDB;&#x5165;&#x5230;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x9876;&#x5C42;&#x76EE;&#x5F55;&#xFF0C;&#x8FD0;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy crawl quotes</div></pre></td></tr></table></figure>
+<p>&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x5C31;&#x4F1A;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>quotes</code>&#x7684;spider&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x521A;&#x521A;&#x6DFB;&#x52A0;&#x7684;name&#xFF0C;&#x8FD9;&#x4E2A;spider&#x5C31;&#x4F1A;&#x5411;<code>quotes.toscrape.com</code>&#x57DF;&#x540D;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;&#x4F60;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x7684;&#x8F93;&#x51FA;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">... (omitted for brevity)</div><div class="line">2016-12-16 21:24:05 [scrapy.core.engine] INFO: Spider opened</div><div class="line">2016-12-16 21:24:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)</div><div class="line">2016-12-16 21:24:05 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023</div><div class="line">2016-12-16 21:24:05 [scrapy.core.engine] DEBUG: Crawled (404) &lt;GET http://quotes.toscrape.com/robots.txt&gt; (referer: None)</div><div class="line">2016-12-16 21:24:05 [scrapy.core.engine] DEBUG: Crawled (200) &lt;GET http://quotes.toscrape.com/page/1/&gt; (referer: None)</div><div class="line">2016-12-16 21:24:05 [scrapy.core.engine] DEBUG: Crawled (200) &lt;GET http://quotes.toscrape.com/page/2/&gt; (referer: None)</div><div class="line">2016-12-16 21:24:05 [quotes] DEBUG: Saved file quotes-1.html</div><div class="line">2016-12-16 21:24:05 [quotes] DEBUG: Saved file quotes-2.html</div><div class="line">2016-12-16 21:24:05 [scrapy.core.engine] INFO: Closing spider (finished)</div><div class="line">...</div></pre></td></tr></table></figure>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x68C0;&#x67E5;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x88AB;parse()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#xFF1A;<em>quotes-1.html </em>&#x548C;<em>quotes-2.html&#xFF0C;</em>&#x91CC;&#x9762;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x672C;&#x662F;&#x5404;&#x81EA;URL&#x8BF7;&#x6C42;&#x7684;&#x5185;&#x5BB9;<em>&#x3002;</em></p>
+<h3 id="&#x521A;&#x521A;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;"><a href="#&#x521A;&#x521A;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;" class="headerlink" title="&#x521A;&#x521A;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;"></a>&#x521A;&#x521A;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;</h3><p>Scrapy&#x901A;&#x8FC7;Spider&#x5185;&#x7684;<code>start_requests</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8BA9;<code>scrapy.Request</code>&#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x3002;&#x6839;&#x636E;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x63A5;&#x6536;&#x5230;&#x7684;&#x54CD;&#x5E94;&#x6570;&#x636E;&#xFF0C;&#x5B9E;&#x4F8B;&#x5316;Response&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x4E00;&#x4E2A;callback&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;response&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x8FDB;callback&#x3002;</p>
+<h3 id="start-requests&#x65B9;&#x6CD5;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;"><a href="#start-requests&#x65B9;&#x6CD5;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;" class="headerlink" title="start_requests&#x65B9;&#x6CD5;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;"></a>start_requests&#x65B9;&#x6CD5;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;</h3><p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x7C7B;&#x5F53;&#x4E2D;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;start_urls&#x5C5E;&#x6027;&#x6765;&#x5B58;&#x50A8;URL list &#x6765;&#x66FF;&#x4EE3;start_requests()&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;list&#x5C06;&#x4F1A;&#x88AB;&#x7528;&#x505A;start_requests()&#x65B9;&#x6CD5;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#xFF0C;&#x53BB;&#x521B;&#x5EFA;&#x521D;&#x59CB;&#x5316;&#x8BF7;&#x6C42;&#x3002;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line"></div><div class="line">class QuotesSpider(scrapy.Spider):</div><div class="line">    name = &quot;quotes&quot;</div><div class="line">    start_urls = [</div><div class="line">        &apos;http://quotes.toscrape.com/page/1/&apos;,</div><div class="line">        &apos;http://quotes.toscrape.com/page/2/&apos;,</div><div class="line">    ]</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        page = response.url.split(&quot;/&quot;)[-2]</div><div class="line">        filename = &apos;quotes-%s.html&apos; % page</div><div class="line">        with open(filename, &apos;wb&apos;) as f:</div><div class="line">            f.write(response.body)</div></pre></td></tr></table></figure>
+<p>parse()&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;url&#x65F6;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x544A;&#x8BC9;Scrapy&#x8981;&#x8FD9;&#x4E48;&#x505A;&#x3002;&#x51FA;&#x73B0;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x662F;&#x56E0;&#x4E3A;parse()&#x662F;Scrapy&#x7684;&#x9ED8;&#x8BA4;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x660E;&#x786E;&#x6307;&#x5B9A;&#x56DE;&#x8C03;&#x3002;</p>
+<h3 id="&#x63D0;&#x53D6;&#x6570;&#x636E;"><a href="#&#x63D0;&#x53D6;&#x6570;&#x636E;" class="headerlink" title="&#x63D0;&#x53D6;&#x6570;&#x636E;"></a>&#x63D0;&#x53D6;&#x6570;&#x636E;</h3><p>&#x5B66;&#x4E60;&#x63D0;&#x53D6;&#x6570;&#x636E;&#x7684;&#x6700;&#x597D;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x4F7F;&#x7528;Scrapy shell&#xFF0C;&#x8FD0;&#x884C;&#x4EE3;&#x7801;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy shell &apos;http://quotes.toscrape.com/page/1/&apos;</div></pre></td></tr></table></figure>
+<p>&#x26A0;&#xFE0F;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x5185;&#x8FD0;&#x884C;Scrapy shell&#xFF0C;url&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x52A0;&#x5F15;&#x53F7;</p>
+<p>On Windows, use double quotes instead:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy shell &quot;http://quotes.toscrape.com/page/1/&quot;</div></pre></td></tr></table></figure>
+<p>Using the shell, you can try selecting elements using <a href="https://www.w3.org/TR/selectors" target="_blank" rel="external">CSS</a> with the response object:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;title&apos;)</div><div class="line">[&lt;Selector xpath=&apos;descendant-or-self::title&apos; data=&apos;&lt;title&gt;Quotes to Scrape&lt;/title&gt;&apos;&gt;]</div></pre></td></tr></table></figure>
+<p>The result of running <code>response.css(&apos;title&apos;)</code> is a list-like object called <a href="https://doc.scrapy.org/en/latest/topics/selectors.html#scrapy.selector.SelectorList" target="_blank" rel="external"><code>SelectorList</code></a>, which represents a list of <a href="https://doc.scrapy.org/en/latest/topics/selectors.html#scrapy.selector.Selector" target="_blank" rel="external"><code>Selector</code></a> objects that wrap around XML/HTML elements and allow you to run further queries to fine-grain the selection or extract the data.</p>
+<p>To extract the text from the title above, you can do:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;title::text&apos;).extract()</div><div class="line">[&apos;Quotes to Scrape&apos;]</div></pre></td></tr></table></figure>
+<p>There are two things to note here: one is that we&#x2019;ve added <code>::text</code> to the CSS query, to mean we want to select only the text elements directly inside <code>` element. If we don&#x2019;t specify</code>::text`, we&#x2019;d get the full title element, including its tags:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;title&apos;).extract()</div><div class="line">[&apos;&lt;title&gt;Quotes to Scrape&lt;/title&gt;&apos;]</div></pre></td></tr></table></figure>
+<p>The other thing is that the result of calling <code>.extract()</code> is a list, because we&#x2019;re dealing with an instance of <a href="https://doc.scrapy.org/en/latest/topics/selectors.html#scrapy.selector.SelectorList" target="_blank" rel="external"><code>SelectorList</code></a>. When you know you just want the first result, as in this case, you can do:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;title::text&apos;).extract_first()</div><div class="line">&apos;Quotes to Scrape&apos;</div></pre></td></tr></table></figure>
+<p>As an alternative, you could&#x2019;ve written:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;title::text&apos;)[0].extract()</div><div class="line">&apos;Quotes to Scrape&apos;</div></pre></td></tr></table></figure>
+<p>However, using <code>.extract_first()</code> avoids an <code>IndexError</code> and returns <code>None</code> when it doesn&#x2019;t find any element matching the selection.</p>
+<p>There&#x2019;s a lesson here: for most scraping code, you want it to be resilient to errors due to things not being found on a page, so that even if some parts fail to be scraped, you can at least get <strong>some</strong> data.</p>
+<p>Besides the <a href="https://doc.scrapy.org/en/latest/topics/selectors.html#scrapy.selector.Selector.extract" target="_blank" rel="external"><code>extract()</code></a> and <code>extract_first()</code> methods, you can also use the <a href="https://doc.scrapy.org/en/latest/topics/selectors.html#scrapy.selector.Selector.re" target="_blank" rel="external"><code>re()</code></a> method to extract using regular expressions:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;title::text&apos;).re(r&apos;Quotes.*&apos;)</div><div class="line">[&apos;Quotes to Scrape&apos;]</div><div class="line">&gt;&gt;&gt; response.css(&apos;title::text&apos;).re(r&apos;Q\w+&apos;)</div><div class="line">[&apos;Quotes&apos;]</div><div class="line">&gt;&gt;&gt; response.css(&apos;title::text&apos;).re(r&apos;(\w+) to (\w+)&apos;)</div><div class="line">[&apos;Quotes&apos;, &apos;Scrape&apos;]</div></pre></td></tr></table></figure>
+<p>In order to find the proper CSS selectors to use, you might find useful opening the response page from the shell in your web browser using <code>view(response)</code>. You can use your browser developer tools or extensions like Firebug (see sections about <a href="https://doc.scrapy.org/en/latest/topics/firebug.html#topics-firebug" target="_blank" rel="external">Using Firebug for scraping</a> and <a href="https://doc.scrapy.org/en/latest/topics/firefox.html#topics-firefox" target="_blank" rel="external">Using Firefox for scraping</a>).</p>
+<p><a href="http://selectorgadget.com/" target="_blank" rel="external">Selector Gadget</a> is also a nice tool to quickly find CSS selector for visually selected elements, which works in many browsers.</p>
+<h4 id="XPath-a-brief-intro"><a href="#XPath-a-brief-intro" class="headerlink" title="XPath: a brief intro"></a>XPath: a brief intro</h4><p>Besides <a href="https://www.w3.org/TR/selectors" target="_blank" rel="external">CSS</a>, Scrapy selectors also support using <a href="https://www.w3.org/TR/xpath" target="_blank" rel="external">XPath</a> expressions:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.xpath(&apos;//title&apos;)</div><div class="line">[&lt;Selector xpath=&apos;//title&apos; data=&apos;&lt;title&gt;Quotes to Scrape&lt;/title&gt;&apos;&gt;]</div><div class="line">&gt;&gt;&gt; response.xpath(&apos;//title/text()&apos;).extract_first()</div><div class="line">&apos;Quotes to Scrape&apos;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">In [9]: response.xpath(&apos;//html/body/div/div[2]/div[1]/nav/ul/li/a/@href&apos;)</div><div class="line">Out[9]: [&lt;Selector xpath=&apos;//html/body/div/div[2]/div[1]/nav/ul/li/a/@href&apos; data=</div><div class="line">&apos;/page/2/&apos;&gt;]</div><div class="line"></div><div class="line">In [10]: response.xpath(&apos;//html/body/div/div[2]/div[1]/nav/ul/li/a&apos;)</div><div class="line">Out[10]: [&lt;Selector xpath=&apos;//html/body/div/div[2]/div[1]/nav/ul/li/a&apos; dat</div><div class="line">a=&apos;&lt;a href=&quot;/page/2/&quot;&gt;Next &lt;span aria-hidde&apos;&gt;]</div></pre></td></tr></table></figure>
+<p>XPath &#x8868;&#x8FBE;&#x5F0F;&#x4F8B;&#x5B50;&#x53CA;&#x542B;&#x4E49;&#xFF1A;</p>
+<p>/html/head/title<br>/html/head/title/text()&#xFF1A;&#x9009;&#x62E9;&#x4E0A;&#x9762;<title>&#x5143;&#x7D20;&#x7684;&#x6587;&#x5B57;<br>//td<br>//div[@class=&#x201D;mine&#x201D;]&#xFF1A;&#x9009;&#x62E9;&#x6240;&#x6709;&#x5177;&#x6709;class=&#x201D;mine&#x201D;&#x5C5E;&#x6027;&#x7684;div<br>//div/@class&#xFF1A;&#x9009;&#x62E9;&#x6240;&#x6709;div&#x4E0B;&#x7684;class<br>//html/body/div/div[2]/div[1]/nav/ul/li/a/@href&#xFF1A;&#x9009;&#x62E9;&#x8BE5;&#x8DEF;&#x5F84;&#x4E0B;<a>&#x6807;&#x7B7E;&#x7684;href&#x5185;&#x5BB9;</a></title></p>
+<p>XPath expressions are very powerful, and are the foundation of Scrapy Selectors. In fact, CSS selectors are converted to XPath under-the-hood. You can see that if you read closely the text representation of the selector objects in the shell.</p>
+<p>While perhaps not as popular as CSS selectors, XPath expressions offer more power because besides navigating the structure, it can also look at the content. Using XPath, you&#x2019;re able to select things like: <em>select the link that contains the text &#x201C;Next Page&#x201D;</em>. This makes XPath very fitting to the task of scraping, and we encourage you to learn XPath even if you already know how to construct CSS selectors, it will make scraping much easier.</p>
+<p>We won&#x2019;t cover much of XPath here, but you can read more about <a href="https://doc.scrapy.org/en/latest/topics/selectors.html#topics-selectors" target="_blank" rel="external">using XPath with Scrapy Selectors here</a>. To learn more about XPath, we recommend <a href="http://zvon.org/comp/r/tut-XPath_1.html" target="_blank" rel="external">this tutorial to learn XPath through examples</a>, and <a href="http://plasmasturm.org/log/xpath101/" target="_blank" rel="external">this tutorial to learn &#x201C;how to think in XPath&#x201D;</a>.</p>
+<h4 id="Extracting-quotes-and-authors"><a href="#Extracting-quotes-and-authors" class="headerlink" title="Extracting quotes and authors"></a>Extracting quotes and authors</h4><p>Now that you know a bit about selection and extraction, let&#x2019;s complete our spider by writing the code to extract the quotes from the web page.</p>
+<p>Each quote in <a href="http://quotes.toscrape.com/" target="_blank" rel="external">http://quotes.toscrape.com</a> is represented by HTML elements that look like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;quote&quot;&gt;</div><div class="line">    &lt;span class=&quot;text&quot;&gt;&#x201C;The world as we have created it is a process of our</div><div class="line">    thinking. It cannot be changed without changing our thinking.&#x201D;&lt;/span&gt;</div><div class="line">    &lt;span&gt;</div><div class="line">        by &lt;small class=&quot;author&quot;&gt;Albert Einstein&lt;/small&gt;</div><div class="line">        &lt;a href=&quot;/author/Albert-Einstein&quot;&gt;(about)&lt;/a&gt;</div><div class="line">    &lt;/span&gt;</div><div class="line">    &lt;div class=&quot;tags&quot;&gt;</div><div class="line">        Tags:</div><div class="line">        &lt;a class=&quot;tag&quot; href=&quot;/tag/change/page/1/&quot;&gt;change&lt;/a&gt;</div><div class="line">        &lt;a class=&quot;tag&quot; href=&quot;/tag/deep-thoughts/page/1/&quot;&gt;deep-thoughts&lt;/a&gt;</div><div class="line">        &lt;a class=&quot;tag&quot; href=&quot;/tag/thinking/page/1/&quot;&gt;thinking&lt;/a&gt;</div><div class="line">        &lt;a class=&quot;tag&quot; href=&quot;/tag/world/page/1/&quot;&gt;world&lt;/a&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>Let&#x2019;s open up scrapy shell and play a bit to find out how to extract the data we want:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ scrapy shell &apos;http://quotes.toscrape.com&apos;</div></pre></td></tr></table></figure>
+<p>We get a list of selectors for the quote HTML elements with:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&quot;div.quote&quot;)</div></pre></td></tr></table></figure>
+<p>Each of the selectors returned by the query above allows us to run further queries over their sub-elements. Let&#x2019;s assign the first selector to a variable, so that we can run our CSS selectors directly on a particular quote:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; quote = response.css(&quot;div.quote&quot;)[0]</div></pre></td></tr></table></figure>
+<p>Now, let&#x2019;s extract <code>title</code>, <code>author</code> and the <code>tags</code> from that quote using the <code>quote</code> object we just created:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; title = quote.css(&quot;span.text::text&quot;).extract_first()</div><div class="line">&gt;&gt;&gt; title</div><div class="line">&apos;&#x201C;The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.&#x201D;&apos;</div><div class="line">&gt;&gt;&gt; author = quote.css(&quot;small.author::text&quot;).extract_first()</div><div class="line">&gt;&gt;&gt; author</div><div class="line">&apos;Albert Einstein&apos;</div></pre></td></tr></table></figure>
+<p>Given that the tags are a list of strings, we can use the <code>.extract()</code> method to get all of them:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; tags = quote.css(&quot;div.tags a.tag::text&quot;).extract()</div><div class="line">&gt;&gt;&gt; tags</div><div class="line">[&apos;change&apos;, &apos;deep-thoughts&apos;, &apos;thinking&apos;, &apos;world&apos;]</div></pre></td></tr></table></figure>
+<p>Having figured out how to extract each bit, we can now iterate over all the quotes elements and put them together into a Python dictionary:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; for quote in response.css(&quot;div.quote&quot;):</div><div class="line">...     text = quote.css(&quot;span.text::text&quot;).extract_first()</div><div class="line">...     author = quote.css(&quot;small.author::text&quot;).extract_first()</div><div class="line">...     tags = quote.css(&quot;div.tags a.tag::text&quot;).extract()</div><div class="line">...     print(dict(text=text, author=author, tags=tags))</div><div class="line">{&apos;tags&apos;: [&apos;change&apos;, &apos;deep-thoughts&apos;, &apos;thinking&apos;, &apos;world&apos;], &apos;author&apos;: &apos;Albert Einstein&apos;, &apos;text&apos;: &apos;&#x201C;The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.&#x201D;&apos;}</div><div class="line">{&apos;tags&apos;: [&apos;abilities&apos;, &apos;choices&apos;], &apos;author&apos;: &apos;J.K. Rowling&apos;, &apos;text&apos;: &apos;&#x201C;It is our choices, Harry, that show what we truly are, far more than our abilities.&#x201D;&apos;}</div><div class="line">    ... a few more of these, omitted for brevity</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
+<h3 id="Extracting-data-in-our-spider"><a href="#Extracting-data-in-our-spider" class="headerlink" title="Extracting data in our spider"></a>Extracting data in our spider</h3><p>Let&#x2019;s get back to our spider. Until now, it doesn&#x2019;t extract any data in particular, just saves the whole HTML page to a local file. Let&#x2019;s integrate the extraction logic above into our spider.</p>
+<p>A Scrapy spider typically generates many dictionaries containing the data extracted from the page. To do that, we use the <code>yield</code> Python keyword in the callback, as you can see below:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> scrapy</div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">QuotesSpider</span><span class="params">(scrapy.Spider)</span>:</span></div><div class="line">    name = <span class="string">&quot;quotes&quot;</span></div><div class="line">    start_urls = [</div><div class="line">        <span class="string">&apos;http://quotes.toscrape.com/page/1/&apos;</span>,</div><div class="line">        <span class="string">&apos;http://quotes.toscrape.com/page/2/&apos;</span>,</div><div class="line">    ]</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></div><div class="line">        <span class="keyword">for</span> quote <span class="keyword">in</span> response.css(<span class="string">&apos;div.quote&apos;</span>):</div><div class="line">            <span class="keyword">yield</span> {</div><div class="line">                <span class="string">&apos;text&apos;</span>: quote.css(<span class="string">&apos;span.text::text&apos;</span>).extract_first(),</div><div class="line">                <span class="string">&apos;author&apos;</span>: quote.css(<span class="string">&apos;small.author::text&apos;</span>).extract_first(),</div><div class="line">                <span class="string">&apos;tags&apos;</span>: quote.css(<span class="string">&apos;div.tags a.tag::text&apos;</span>).extract(),</div><div class="line">            }</div></pre></td></tr></table></figure>
+<p>If you run this spider, it will output the extracted data with the log:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">2016-09-19 18:57:19 [scrapy.core.scraper] DEBUG: Scraped from &lt;200 http://quotes.toscrape.com/page/1/&gt;</div><div class="line">{&apos;tags&apos;: [&apos;life&apos;, &apos;love&apos;], &apos;author&apos;: &apos;Andr&#xE9; Gide&apos;, &apos;text&apos;: &apos;&#x201C;It is better to be hated for what you are than to be loved for what you are not.&#x201D;&apos;}</div><div class="line">2016-09-19 18:57:19 [scrapy.core.scraper] DEBUG: Scraped from &lt;200 http://quotes.toscrape.com/page/1/&gt;</div><div class="line">{&apos;tags&apos;: [&apos;edison&apos;, &apos;failure&apos;, &apos;inspirational&apos;, &apos;paraphrased&apos;], &apos;author&apos;: &apos;Thomas A. Edison&apos;, &apos;text&apos;: &quot;&#x201C;I have not failed. I&apos;ve just found 10,000 ways that won&apos;t work.&#x201D;&quot;}</div></pre></td></tr></table></figure>
+<h2 id="Storing-the-scraped-data"><a href="#Storing-the-scraped-data" class="headerlink" title="Storing the scraped data"></a>Storing the scraped data</h2><p>The simplest way to store the scraped data is by using <a href="https://doc.scrapy.org/en/latest/topics/feed-exports.html#topics-feed-exports" target="_blank" rel="external">Feed exports</a>, with the following command:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy crawl quotes -o quotes.json</div></pre></td></tr></table></figure>
+<p>That will generate an <code>quotes.json</code> file containing all scraped items, serialized in <a href="https://en.wikipedia.org/wiki/JSON" target="_blank" rel="external">JSON</a>.</p>
+<p>For historic reasons, Scrapy appends to a given file instead of overwriting its contents. If you run this command twice without removing the file before the second time, you&#x2019;ll end up with a broken JSON file.</p>
+<p>You can also used other formats, like <a href="http://jsonlines.org/" target="_blank" rel="external">JSON Lines</a>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy crawl quotes -o quotes.jl</div></pre></td></tr></table></figure>
+<p>The <a href="http://jsonlines.org/" target="_blank" rel="external">JSON Lines</a> format is useful because it&#x2019;s stream-like, you can easily append new records to it. It doesn&#x2019;t have the same problem of JSON when you run twice. Also, as each record is a separate line, you can process big files without having to fit everything in memory, there are tools like <a href="https://stedolan.github.io/jq" target="_blank" rel="external">JQ</a> to help doing that at the command-line.</p>
+<p>In small projects (like the one in this tutorial), that should be enough. However, if you want to perform more complex things with the scraped items, you can write an <a href="https://doc.scrapy.org/en/latest/topics/item-pipeline.html#topics-item-pipeline" target="_blank" rel="external">Item Pipeline</a>. A placeholder file for Item Pipelines has been set up for you when the project is created, in <code>tutorial/pipelines.py</code>. Though you don&#x2019;t need to implement any item pipelines if you just want to store the scraped items.</p>
+<h2 id="Following-links"><a href="#Following-links" class="headerlink" title="Following links"></a>Following links</h2><p>Let&#x2019;s say, instead of just scraping the stuff from the first two pages from <a href="http://quotes.toscrape.com/" target="_blank" rel="external">http://quotes.toscrape.com</a>, you want quotes from all the pages in the website.</p>
+<p>Now that you know how to extract data from pages, let&#x2019;s see how to follow links from them.</p>
+<p>First thing is to extract the link to the page we want to follow. Examining our page, we can see there is a link to the next page with the following markup:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;ul class=&quot;pager&quot;&gt;</div><div class="line">    &lt;li class=&quot;next&quot;&gt;</div><div class="line">        &lt;a href=&quot;/page/2/&quot;&gt;Next &lt;span aria-hidden=&quot;true&quot;&gt;&#x2192;&lt;/span&gt;&lt;/a&gt;</div><div class="line">    &lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
+<p>We can try extracting it in the shell:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;li.next a&apos;).extract_first()</div><div class="line">&apos;&lt;a href=&quot;/page/2/&quot;&gt;Next &lt;span aria-hidden=&quot;true&quot;&gt;&#x2192;&lt;/span&gt;&lt;/a&gt;&apos;</div></pre></td></tr></table></figure>
+<p>This gets the anchor element, but we want the attribute <code>href</code>. For that, Scrapy supports a CSS extension that let&#x2019;s you select the attribute contents, like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; response.css(&apos;li.next a::attr(href)&apos;).extract_first()</div><div class="line">&apos;/page/2/&apos;</div></pre></td></tr></table></figure>
+<p>Let&#x2019;s see now our spider modified to recursively follow the link to the next page, extracting data from it:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line"></div><div class="line">class QuotesSpider(scrapy.Spider):</div><div class="line">    name = &quot;quotes&quot;</div><div class="line">    start_urls = [</div><div class="line">        &apos;http://quotes.toscrape.com/page/1/&apos;,</div><div class="line">    ]</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        for quote in response.css(&apos;div.quote&apos;):</div><div class="line">            yield {</div><div class="line">                &apos;text&apos;: quote.css(&apos;span.text::text&apos;).extract_first(),</div><div class="line">                &apos;author&apos;: quote.css(&apos;small.author::text&apos;).extract_first(),</div><div class="line">                &apos;tags&apos;: quote.css(&apos;div.tags a.tag::text&apos;).extract(),</div><div class="line">            }</div><div class="line"></div><div class="line">        next_page = response.css(&apos;li.next a::attr(href)&apos;).extract_first()</div><div class="line">        if next_page is not None:</div><div class="line">            next_page = response.urljoin(next_page)</div><div class="line">            yield scrapy.Request(next_page, callback=self.parse)</div></pre></td></tr></table></figure>
+<p>Now, after extracting the data, the <code>parse()</code> method looks for the link to the next page, builds a full absolute URL using the <a href="https://doc.scrapy.org/en/latest/topics/request-response.html#scrapy.http.Response.urljoin" target="_blank" rel="external"><code>urljoin()</code></a> method (since the links can be relative) and yields a new request to the next page, registering itself as callback to handle the data extraction for the next page and to keep the crawling going through all the pages.</p>
+<p>What you see here is Scrapy&#x2019;s mechanism of following links: when you yield a Request in a callback method, Scrapy will schedule that request to be sent and register a callback method to be executed when that request finishes.</p>
+<p>Using this, you can build complex crawlers that follow links according to rules you define, and extract different kinds of data depending on the page it&#x2019;s visiting.</p>
+<p>In our example, it creates a sort of loop, following all the links to the next page until it doesn&#x2019;t find one &#x2013; handy for crawling blogs, forums and other sites with pagination.</p>
+<h3 id="A-shortcut-for-creating-Requests"><a href="#A-shortcut-for-creating-Requests" class="headerlink" title="A shortcut for creating Requests"></a>A shortcut for creating Requests</h3><p>As a shortcut for creating Request objects you can use <a href="https://doc.scrapy.org/en/latest/topics/request-response.html#scrapy.http.TextResponse.follow" target="_blank" rel="external"><code>response.follow</code></a>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line"></div><div class="line">class QuotesSpider(scrapy.Spider):</div><div class="line">    name = &quot;quotes&quot;</div><div class="line">    start_urls = [</div><div class="line">        &apos;http://quotes.toscrape.com/page/1/&apos;,</div><div class="line">    ]</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        for quote in response.css(&apos;div.quote&apos;):</div><div class="line">            yield {</div><div class="line">                &apos;text&apos;: quote.css(&apos;span.text::text&apos;).extract_first(),</div><div class="line">                &apos;author&apos;: quote.css(&apos;span small::text&apos;).extract_first(),</div><div class="line">                &apos;tags&apos;: quote.css(&apos;div.tags a.tag::text&apos;).extract(),</div><div class="line">            }</div><div class="line"></div><div class="line">        next_page = response.css(&apos;li.next a::attr(href)&apos;).extract_first()</div><div class="line">        if next_page is not None:</div><div class="line">            yield response.follow(next_page, callback=self.parse)</div></pre></td></tr></table></figure>
+<p>Unlike scrapy.Request, <code>response.follow</code> supports relative URLs directly - no need to call urljoin. Note that <code>response.follow</code> just returns a Request instance; you still have to yield this Request.</p>
+<p>You can also pass a selector to <code>response.follow</code> instead of a string; this selector should extract necessary attributes:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">for href in response.css(&apos;li.next a::attr(href)&apos;):</div><div class="line">    yield response.follow(href, callback=self.parse)</div></pre></td></tr></table></figure>
+<p>For <code>[</code>](undefined) elements there is a shortcut: <code>response.follow</code> uses their href attribute automatically. So the code can be shortened further:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">for a in response.css(&apos;li.next a&apos;):</div><div class="line">    yield response.follow(a, callback=self.parse)</div></pre></td></tr></table></figure>
+<p>Note</p>
+<p><code>response.follow(response.css(&apos;li.next a&apos;))</code> is not valid because <code>response.css</code> returns a list-like object with selectors for all results, not a single selector. A <code>for</code> loop like in the example above, or <code>response.follow(response.css(&apos;li.next a&apos;)[0])</code> is fine.</p>
+<h3 id="More-examples-and-patterns"><a href="#More-examples-and-patterns" class="headerlink" title="More examples and patterns"></a>More examples and patterns</h3><p>Here is another spider that illustrates callbacks and following links, this time for scraping author information:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line"></div><div class="line">class AuthorSpider(scrapy.Spider):</div><div class="line">    name = &apos;author&apos;</div><div class="line"></div><div class="line">    start_urls = [&apos;http://quotes.toscrape.com/&apos;]</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        # follow links to author pages</div><div class="line">        for href in response.css(&apos;.author + a::attr(href)&apos;):</div><div class="line">            yield response.follow(href, self.parse_author)</div><div class="line"></div><div class="line">        # follow pagination links</div><div class="line">        for href in response.css(&apos;li.next a::attr(href)&apos;):</div><div class="line">            yield response.follow(href, self.parse)</div><div class="line"></div><div class="line">    def parse_author(self, response):</div><div class="line">        def extract_with_css(query):</div><div class="line">            return response.css(query).extract_first().strip()</div><div class="line"></div><div class="line">        yield {</div><div class="line">            &apos;name&apos;: extract_with_css(&apos;h3.author-title::text&apos;),</div><div class="line">            &apos;birthdate&apos;: extract_with_css(&apos;.author-born-date::text&apos;),</div><div class="line">            &apos;bio&apos;: extract_with_css(&apos;.author-description::text&apos;),</div><div class="line">        }</div></pre></td></tr></table></figure>
+<p>This spider will start from the main page, it will follow all the links to the authors pages calling the <code>parse_author</code> callback for each of them, and also the pagination links with the <code>parse</code> callback as we saw before.</p>
+<p>Here we&#x2019;re passing callbacks to <code>response.follow</code> as positional arguments to make the code shorter; it also works for <code>scrapy.Request</code>.</p>
+<p>The <code>parse_author</code> callback defines a helper function to extract and cleanup the data from a CSS query and yields the Python dict with the author data.</p>
+<p>Another interesting thing this spider demonstrates is that, even if there are many quotes from the same author, we don&#x2019;t need to worry about visiting the same author page multiple times. By default, Scrapy filters out duplicated requests to URLs already visited, avoiding the problem of hitting servers too much because of a programming mistake. This can be configured by the setting<a href="https://doc.scrapy.org/en/latest/topics/settings.html#std:setting-DUPEFILTER_CLASS" target="_blank" rel="external"><code>DUPEFILTER_CLASS</code></a>.</p>
+<p>Hopefully by now you have a good understanding of how to use the mechanism of following links and callbacks with Scrapy.</p>
+<p>As yet another example spider that leverages the mechanism of following links, check out the <a href="https://doc.scrapy.org/en/latest/topics/spiders.html#scrapy.spiders.CrawlSpider" target="_blank" rel="external"><code>CrawlSpider</code></a> class for a generic spider that implements a small rules engine that you can use to write your crawlers on top of it.</p>
+<p>Also, a common pattern is to build an item with data from more than one page, using a <a href="https://doc.scrapy.org/en/latest/topics/request-response.html#topics-request-response-ref-request-callback-arguments" target="_blank" rel="external">trick to pass additional data to the callbacks</a>.</p>
+<h2 id="Using-spider-arguments"><a href="#Using-spider-arguments" class="headerlink" title="Using spider arguments"></a>Using spider arguments</h2><p>You can provide command line arguments to your spiders by using the <code>-a</code> option when running them:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scrapy crawl quotes -o quotes-humor.json -a tag=humor</div></pre></td></tr></table></figure>
+<p>These arguments are passed to the Spider&#x2019;s <code>__init__</code> method and become spider attributes by default.</p>
+<p>In this example, the value provided for the <code>tag</code> argument will be available via <code>self.tag</code>. You can use this to make your spider fetch only quotes with a specific tag, building the URL based on the argument:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">import scrapy</div><div class="line"></div><div class="line"></div><div class="line">class QuotesSpider(scrapy.Spider):</div><div class="line">    name = &quot;quotes&quot;</div><div class="line"></div><div class="line">    def start_requests(self):</div><div class="line">        url = &apos;http://quotes.toscrape.com/&apos;</div><div class="line">        tag = getattr(self, &apos;tag&apos;, None)</div><div class="line">        if tag is not None:</div><div class="line">            url = url + &apos;tag/&apos; + tag</div><div class="line">        yield scrapy.Request(url, self.parse)</div><div class="line"></div><div class="line">    def parse(self, response):</div><div class="line">        for quote in response.css(&apos;div.quote&apos;):</div><div class="line">            yield {</div><div class="line">                &apos;text&apos;: quote.css(&apos;span.text::text&apos;).extract_first(),</div><div class="line">                &apos;author&apos;: quote.css(&apos;small.author::text&apos;).extract_first(),</div><div class="line">            }</div><div class="line"></div><div class="line">        next_page = response.css(&apos;li.next a::attr(href)&apos;).extract_first()</div><div class="line">        if next_page is not None:</div><div class="line">            yield response.follow(next_page, self.parse)</div></pre></td></tr></table></figure>
+<p>If you pass the <code>tag=humor</code> argument to this spider, you&#x2019;ll notice that it will only visit URLs from the <code>humor</code> tag, such as <code>http://quotes.toscrape.com/tag/humor</code>.</p>
+<p>You can <a href="https://doc.scrapy.org/en/latest/topics/spiders.html#spiderargs" target="_blank" rel="external">learn more about handling spider arguments here</a>.</p>
+<h2 id="Next-steps"><a href="#Next-steps" class="headerlink" title="Next steps"></a>Next steps</h2><p>This tutorial covered only the basics of Scrapy, but there&#x2019;s a lot of other features not mentioned here. Check the <a href="https://doc.scrapy.org/en/latest/intro/overview.html#topics-whatelse" target="_blank" rel="external">What else?</a> section in <a href="https://doc.scrapy.org/en/latest/intro/overview.html#intro-overview" target="_blank" rel="external">Scrapy at a glance</a> chapter for a quick overview of the most important ones.</p>
+<p>You can continue from the section <a href="https://doc.scrapy.org/en/latest/index.html#section-basics" target="_blank" rel="external">Basic concepts</a> to know more about the command-line tool, spiders, selectors and other things the tutorial hasn&#x2019;t covered like modeling the scraped data. If you prefer to play with an example project, check the <a href="https://doc.scrapy.org/en/latest/intro/examples.html#intro-examples" target="_blank" rel="external">Examples</a> section.</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag">#python</a>
+          
+            <a href="/tags/study/" rel="tag">#study</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/人生中第一次送上救护车/" rel="next" title="人生中第一次送上救护车">
+                <i class="fa fa-chevron-left"></i> 人生中第一次送上救护车
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/KINDLE阅读器调查/" rel="prev" title="KINDLE阅读器调查">
+                KINDLE阅读器调查 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+    <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
+    <div id="container" style="display:none"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    const myTheme = {
+      render(state, instance) {
+        const container = document.createElement('div');
+        container.lang = "en-US";
+        container.className = 'gitment-container gitment-root-container';
+        container.appendChild(instance.renderHeader(state, instance));
+        container.appendChild(instance.renderEditor(state, instance));
+        container.appendChild(instance.renderComments(state, instance));
+        container.appendChild(instance.renderFooter(state, instance));
+        return container;
+      }
+    }
+    function showGitment() {
+      $("#gitment_title").attr("style", "display:none");
+      $("#container").attr("style", "").addClass("gitment_container");
+      var gitment = new Gitment({
+        id: window.location.pathname,
+        theme: myTheme,
+        owner: 'dj9399',
+        repo: 'dj9399.github.io',
+        oauth: {
+          client_id: '435966ed474af355f90b',
+          client_secret: '823f6a38ab597207732b6900bd08ef9463165d70'
+        }
+      });
+      gitment.render('container');
+    }
+    </script>
+	
+		
+  </div>
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/sidebar_head.jpg"
+               alt="dj9399" />
+          <p class="site-author-name" itemprop="name">dj9399</p>
+          <p class="site-description motion-element" itemprop="description">sens是一个基于Github和Hexo的静态Blog，希望用简单而清晰的写作方式Markdown分享自己的心得体会。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">56</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、介绍"><span class="nav-number">1.</span> <span class="nav-text">一、介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、入门实例"><span class="nav-number">2.</span> <span class="nav-text">二、入门实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、创建项目"><span class="nav-number">3.</span> <span class="nav-text">三、创建项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我们的第一个Spider"><span class="nav-number">3.1.</span> <span class="nav-text">我们的第一个Spider</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#怎样运行我们的spider"><span class="nav-number">3.2.</span> <span class="nav-text">怎样运行我们的spider</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#刚刚发生了什么"><span class="nav-number">3.3.</span> <span class="nav-text">刚刚发生了什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#start-requests方法的快捷方式"><span class="nav-number">3.4.</span> <span class="nav-text">start_requests方法的快捷方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提取数据"><span class="nav-number">3.5.</span> <span class="nav-text">提取数据</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#XPath-a-brief-intro"><span class="nav-number">3.5.1.</span> <span class="nav-text">XPath: a brief intro</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Extracting-quotes-and-authors"><span class="nav-number">3.5.2.</span> <span class="nav-text">Extracting quotes and authors</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Extracting-data-in-our-spider"><span class="nav-number">3.6.</span> <span class="nav-text">Extracting data in our spider</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Storing-the-scraped-data"><span class="nav-number">4.</span> <span class="nav-text">Storing the scraped data</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Following-links"><span class="nav-number">5.</span> <span class="nav-text">Following links</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-shortcut-for-creating-Requests"><span class="nav-number">5.1.</span> <span class="nav-text">A shortcut for creating Requests</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#More-examples-and-patterns"><span class="nav-number">5.2.</span> <span class="nav-text">More examples and patterns</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-spider-arguments"><span class="nav-number">6.</span> <span class="nav-text">Using spider arguments</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next-steps"><span class="nav-number">7.</span> <span class="nav-text">Next steps</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">dj9399</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<!-- 不蒜统计 -->
+<br>
+
+<span style="display: inline;" id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv" font="微软雅黑" ></span> 次</span>
+<span style="display: inline;" id="busuanzi_container_page_pv">本文总阅读量 <span id="busuanzi_value_page_pv" font="微软雅黑" ></span> 次</span>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
