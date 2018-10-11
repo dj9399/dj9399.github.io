@@ -344,8 +344,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/微信企业号发送PM2.5报警/" rel="prev" title="微信企业号发送PM2.5报警">
-                微信企业号发送PM2.5报警 <i class="fa fa-chevron-right"></i>
+              <a href="/post/爬淘宝京东追评的PYTHON小爬虫/" rel="prev" title="爬淘宝京东追评的PYTHON小爬虫">
+                爬淘宝京东追评的PYTHON小爬虫 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -372,41 +372,6 @@
           
   <div class="comments" id="comments">
     
-    <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
-    <div id="container" style="display:none"></div>
-    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-    <script>
-    const myTheme = {
-      render(state, instance) {
-        const container = document.createElement('div');
-        container.lang = "en-US";
-        container.className = 'gitment-container gitment-root-container';
-        container.appendChild(instance.renderHeader(state, instance));
-        container.appendChild(instance.renderEditor(state, instance));
-        container.appendChild(instance.renderComments(state, instance));
-        container.appendChild(instance.renderFooter(state, instance));
-        return container;
-      }
-    }
-    function showGitment() {
-      $("#gitment_title").attr("style", "display:none");
-      $("#container").attr("style", "").addClass("gitment_container");
-      var gitment = new Gitment({
-        id: window.location.pathname,
-        theme: myTheme,
-        owner: 'dj9399',
-        repo: 'dj9399.github.io',
-        oauth: {
-          client_id: '435966ed474af355f90b',
-          client_secret: '823f6a38ab597207732b6900bd08ef9463165d70'
-        }
-      });
-      gitment.render('container');
-    }
-    </script>
-	
-		
   </div>
 
 
