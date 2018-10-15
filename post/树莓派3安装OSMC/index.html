@@ -362,16 +362,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/树莓派3安装迅雷远程/" rel="next" title="树莓派3安装迅雷远程">
-                <i class="fa fa-chevron-left"></i> 树莓派3安装迅雷远程
+              <a href="/post/入门高清投影之一：器材/" rel="next" title="入门高清投影之一：器材">
+                <i class="fa fa-chevron-left"></i> 入门高清投影之一：器材
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/入门高清投影之二：幕布/" rel="prev" title="入门高清投影之二：幕布">
-                入门高清投影之二：幕布 <i class="fa fa-chevron-right"></i>
+              <a href="/post/树莓派3安装迅雷远程/" rel="prev" title="树莓派3安装迅雷远程">
+                树莓派3安装迅雷远程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -398,6 +398,41 @@
           
   <div class="comments" id="comments">
     
+    <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
+    <div id="container" style="display:none"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    const myTheme = {
+      render(state, instance) {
+        const container = document.createElement('div');
+        container.lang = "en-US";
+        container.className = 'gitment-container gitment-root-container';
+        container.appendChild(instance.renderHeader(state, instance));
+        container.appendChild(instance.renderEditor(state, instance));
+        container.appendChild(instance.renderComments(state, instance));
+        container.appendChild(instance.renderFooter(state, instance));
+        return container;
+      }
+    }
+    function showGitment() {
+      $("#gitment_title").attr("style", "display:none");
+      $("#container").attr("style", "").addClass("gitment_container");
+      var gitment = new Gitment({
+        id: window.location.pathname,
+        theme: myTheme,
+        owner: 'dj9399',
+        repo: 'dj9399.github.io',
+        oauth: {
+          client_id: '435966ed474af355f90b',
+          client_secret: '823f6a38ab597207732b6900bd08ef9463165d70'
+        }
+      });
+      gitment.render('container');
+    }
+    </script>
+	
+		
   </div>
 
 
