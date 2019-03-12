@@ -92,7 +92,7 @@
 <meta property="og:url" content="http://dj9399.github.io/post/drupal8安装之php入坑/index.html">
 <meta property="og:site_name" content="sens">
 <meta property="og:description" content="drupal8安装之php入坑">
-<meta property="og:updated_time" content="2017-11-13T07:11:30.573Z">
+<meta property="og:updated_time" content="2019-03-12T02:55:55.857Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="drupal8安装之php入坑">
 <meta name="twitter:description" content="drupal8安装之php入坑">
@@ -273,7 +273,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-11-13T11:45:10+08:00" content="2017-11-13">
+            <time itemprop="dateCreated" datetime="2017-11-13T00:00:00+08:00" content="2017-11-13">
               2017-11-13
             </time>
           </span>
@@ -317,7 +317,7 @@
 <p>listen.owner = nginx<br>listen.group = nginx</p>
 <p>listen = /var/run/php-fpm/php-fpm.sock<br>&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x662F; socket &#x65B9;&#x5F0F;&#x8FDE;&#x63A5;&#x3002;<br>&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5148;&#x521B;&#x5EFA; php-fpm &#x6587;&#x4EF6;&#x5939;<br>mkdir /var/run/php-fpm/<br>&#x63A5;&#x4E0B;&#x6765;&#x914D;&#x7F6E; php-pfm &#x670D;&#x52A1;&#xFF1A;<br>cp sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm<br>chmod +x /etc/init.d/php-fpm</p>
 <p>chkconfig &#x2013;add php-fpm<br>chkconfig php-fpm on<br>&#x542F;&#x52A8; php-fpm&#xFF1A;<br>service php-fpm start</p>
-<p>&#x7136;&#x540E;&#x5728;&#x914D;&#x7F6E; Nginx &#x540E;&#x7AEF;&#x652F;&#x6301;&#x7684;&#x65F6;&#x5019;&#xFF1A;<br>location ~ .php$ {<br>    try_files $uri =404;<br>    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;<br>    include fastcgi_params;<br>    fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;<br>}</p>
+<p>&#x7136;&#x540E;&#x5728;&#x914D;&#x7F6E; Nginx &#x540E;&#x7AEF;&#x652F;&#x6301;&#x7684;&#x65F6;&#x5019;&#xFF1A;<br>location ~ .php$ {<br>&#x200B;    try_files $uri =404;<br>&#x200B;    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;<br>&#x200B;    include fastcgi_params;<br>&#x200B;    fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;<br>}</p>
 <p>&#x81F3;&#x6B64;PHP&#x73AF;&#x5883;&#x5B89;&#x88C5;&#x597D;&#xFF0C;&#x6D4B;&#x8BD5;&#x53EF;&#x4EE5;&#x7F51;&#x4E0A;&#x641C;&#x7D22;&#x4E0B;</p>
 <p>ps:&#x503C;&#x5F97;&#x7EC6;&#x8BFB;&#xFF1A;<br><a href="http://blog.csdn.net/zqtsx/article/details/9088877" target="_blank" rel="external">PHP&#x7F16;&#x8BD1;&#x5B89;&#x88C5;</a></p>
 <p>PHP&#x914D;&#x597D;&#x5C31;&#x5B89;&#x88C5;drupal&#x5C31;&#x7B80;&#x5355;&#x4E86;&#xFF0C;&#x6559;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;<br><a href="https://www.zhi12.com/node/8901" target="_blank" rel="external">https://www.zhi12.com/node/8901</a></p>
@@ -352,8 +352,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/k2p opboot 刷Padavan/" rel="next" title="k2p opboot 刷Padavan">
-                <i class="fa fa-chevron-left"></i> k2p opboot 刷Padavan
+              <a href="/post/k2p无线中继/" rel="next" title="k2p无线中继">
+                <i class="fa fa-chevron-left"></i> k2p无线中继
               </a>
             
           </div>
@@ -459,14 +459,14 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/sidebar_head.jpg"
-               alt="dj9399" />
-          <p class="site-author-name" itemprop="name">dj9399</p>
+               alt="sens" />
+          <p class="site-author-name" itemprop="name">sens</p>
           <p class="site-description motion-element" itemprop="description">sens是一个基于Github和Hexo的静态Blog，希望用简单而清晰的写作方式Markdown分享自己的心得体会。</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">100</span>
+              <span class="site-state-item-count">104</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -476,7 +476,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">43</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -535,7 +535,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">dj9399</span>
+  <span class="author" itemprop="copyrightHolder">sens</span>
 </div>
 
 <div class="powered-by">
