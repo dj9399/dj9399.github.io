@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dj9399.github.io/"/>
-  <updated>2019-09-12T02:36:48.301Z</updated>
+  <updated>2019-09-12T03:59:34.917Z</updated>
   <id>http://dj9399.github.io/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>QQ安全验证逻辑</title>
+    <link href="http://dj9399.github.io/post/QQ%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81%E9%80%BB%E8%BE%91/"/>
+    <id>http://dj9399.github.io/post/QQ安全验证逻辑/</id>
+    <published>2019-09-09T16:00:00.000Z</published>
+    <updated>2019-09-12T03:59:34.917Z</updated>
+    
+    <content type="html">&lt;p&gt;&amp;#x4ECA;&amp;#x5929;&amp;#x767B;&amp;#x5F55;&amp;#x4E86;&amp;#x4E00;&amp;#x4E0B;&amp;#x4E8C;&amp;#x4E2A;&amp;#x6708;&amp;#x6CA1;&amp;#x4E0A;&amp;#x7EBF;&amp;#x7684;&amp;#x5907;&amp;#x7528;QQ&amp;#x5E10;&amp;#x53F7;&amp;#xFF0C;&amp;#x63D0;&amp;#x793A;&amp;#x8BF4;&amp;#x201C;&amp;#x4F60;&amp;#x5DF2;&amp;#x5F00;&amp;#x59CB;&amp;#x8BBE;&amp;#x5907;&amp;#x9501; &amp;#x767B;&amp;#x5F55;&amp;#x8BF7;&amp;#x6C42;&amp;#x5931;&amp;#x8D25;&amp;#x201D;&amp;#xFF0C;&amp;#x4E8E;&amp;#x662F;&amp;#x4FEE;&amp;#x6539;&amp;#x5B89;&amp;#x5168;&amp;#x9A8C;&amp;#x8BC1;&amp;#xFF0C;&amp;#x6539;&amp;#x7528;&amp;#x624B;&amp;#x673A;&amp;#x53D1;&amp;#x9001;&amp;#x77ED;&amp;#x4FE1;&amp;#x65B9;&amp;#x5F0F;&amp;#x6765;&amp;#x767B;&amp;#x5F55;&amp;#xFF0C;&amp;#x53D1;&amp;#x73B0;&amp;#x8FD9;&amp;#x79CD;&amp;#x65B9;&amp;#x5F0F;&amp;#x7ADF;&amp;#x7136;&amp;#x53EA;&amp;#x80FD;&amp;#x4E34;&amp;#x65F6;&amp;#x767B;&amp;#x5F55;&amp;#x4E00;&amp;#x6B21;&amp;#xFF0C;&amp;#x767B;&amp;#x5F55;&amp;#x7B2C;&amp;#x4E8C;&amp;#x6B21;&amp;#x8FD8;&amp;#x5F97;&amp;#x53D1;&amp;#x9001;&amp;#x77ED;&amp;#x4FE1;&amp;#x3002;&amp;#x6CA1;&amp;#x529E;&amp;#x6CD5;&amp;#xFF0C;&amp;#x53EA;&amp;#x597D;&amp;#x641C;&amp;#x7D22;&amp;#x201C;&amp;#x4F60;&amp;#x5DF2;&amp;#x5F00;&amp;#x59CB;&amp;#x8BBE;&amp;#x5907;&amp;#x9501; &amp;#x767B;&amp;#x5F55;&amp;#x8BF7;&amp;#x6C42;&amp;#x5931;&amp;#x8D25;&amp;#x201D;&amp;#x7684;&amp;#x89E3;&amp;#x51B3;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF0C;&amp;#x7ED3;&amp;#x679C;&amp;#x662F;&amp;#x8981;&amp;#x5728;&amp;#x624B;&amp;#x673A;&amp;#x4E0A;&amp;#x5173;&amp;#x95ED;&amp;#x8BBE;&amp;#x5907;&amp;#x9501;&amp;#xFF0C;&amp;#x4F46;&amp;#x6211;&amp;#x4ECE;&amp;#x6765;&amp;#x4E0D;&amp;#x7528;&amp;#x624B;&amp;#x673A;qq&amp;#x7684;&amp;#xFF0C;&amp;#x56E0;&amp;#x4E3A;&amp;#x505A;&amp;#x5F97;&amp;#x5B9E;&amp;#x5728;&amp;#x592A;&amp;#x70C2;&amp;#x592A;&amp;#x5927;&amp;#x592A;&amp;#x6162;&amp;#xFF0C;&amp;#x73B0;&amp;#x5728;&amp;#x53EA;&amp;#x597D;&amp;#x5728;&amp;#x624B;&amp;#x673A;&amp;#x4E0A;&amp;#x5B89;&amp;#x88C5;QQ&amp;#x3002;&amp;#x5B89;&amp;#x88C5;&amp;#x597D;qq&amp;#x540E;&amp;#xFF0C;&amp;#x67E5;&amp;#x770B;&amp;#x4E2A;&amp;#x4EBA;&amp;#x8BBE;&amp;#x7F6E;&amp;#x4E2D;&amp;#x6839;&amp;#x672C;&amp;#x5C31;&amp;#x6CA1;&amp;#x5F00;&amp;#x542F;&amp;#x8FC7;&amp;#x8BBE;&amp;#x5907;&amp;#x9501;&amp;#xFF0C;&amp;#x4E0D;&amp;#x8FC7;&amp;#x8FD9;&amp;#x6B21;&amp;#x767B;&amp;#x5F55;&amp;#x7535;&amp;#x8111;&amp;#x7248;&amp;#x7684;qq&amp;#x63D0;&amp;#x9192;&amp;#x53EF;&amp;#x4EE5;&amp;#x8FDB;&amp;#x884C;&amp;#x624B;&amp;#x673A;&amp;#x9A8C;&amp;#x8BC1;&amp;#x4E86;&amp;#x3002;&amp;#x539F;&amp;#x6765;&amp;#x8FD9;&amp;#x4E2A;&amp;#x5B89;&amp;#x5168;&amp;#x9A8C;&amp;#x8BC1;&amp;#x6839;&amp;#x672C;&amp;#x76EE;&amp;#x7684;&amp;#x4E0D;&amp;#x662F;&amp;#x9A8C;&amp;#x8BC1;&amp;#x4F60;&amp;#x624B;&amp;#x673A;&amp;#x53F7;&amp;#xFF0C;&amp;#x800C;&amp;#x662F;&amp;#x8BA9;&amp;#x4F60;&amp;#x5B89;&amp;#x88C5;&amp;#x4E00;&amp;#x4E2A;&amp;#x624B;&amp;#x673A;&amp;#x7248;QQ&amp;#xFF0C;&amp;#x771F;&amp;#x662F;&amp;#x591F;&amp;#x6076;&amp;#x5FC3;&amp;#x7684;&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x7528;&amp;#x5230;&amp;#x7B2C;&amp;#x4E8C;&amp;#x5929;&amp;#xFF0C;PC&amp;#x6BCF;&amp;#x6BCF;&amp;#x767B;&amp;#x5F55;&amp;#x8BE5;QQ&amp;#xFF0C;&amp;#x53C8;&amp;#x63D0;&amp;#x793A;&amp;#x8981;&amp;#x7528;&amp;#x624B;&amp;#x673A;QQ&amp;#x8FDB;&amp;#x884C;&amp;#x626B;&amp;#x63CF;&amp;#xFF0C;&amp;#x597D;&amp;#x5427;&amp;#xFF0C;&amp;#x6211;&amp;#x8BA4;&amp;#x4E86;&amp;#xFF0C;&amp;#x6211;&amp;#x5F00;&amp;#x542F;&amp;#x8BBE;&amp;#x5907;&amp;#x9501;&amp;#x5E76;&amp;#x628A;&amp;#x7535;&amp;#x8111;&amp;#x8BBE;&amp;#x7F6E;&amp;#x4E3A;&amp;#x901A;&amp;#x8FC7;&amp;#xFF0C;&amp;#x7535;&amp;#x8111;&amp;#x7EC8;&amp;#x4E8E;&amp;#x53EF;&amp;#x4EE5;&amp;#x76F4;&amp;#x63A5;&amp;#x767B;&amp;#x5F55;&amp;#x4E86;&amp;#x3002;&amp;#x6211;&amp;#x8BA4;&amp;#x8BC6;&amp;#x4E2D;QQ&amp;#x7684;&amp;#x5B89;&amp;#x5168;&amp;#x9A8C;&amp;#x8BC1;&amp;#x903B;&amp;#x8F91;&amp;#x5DF2;&amp;#x5347;&amp;#x534E;&amp;#x4E3A;&amp;#x795E;&amp;#x7EA7;&amp;#xFF0C;&amp;#x53EA;&amp;#x6709;&amp;#x795E;&amp;#x624D;&amp;#x660E;&amp;#x767D;&amp;#x3002;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      QQ安全验证逻辑
+    
+    </summary>
+    
+    
+      <category term="soft" scheme="http://dj9399.github.io/tags/soft/"/>
+    
+  </entry>
   
   <entry>
     <title>纪念佳贝君</title>
@@ -493,31 +515,6 @@
     
     
       <category term="game" scheme="http://dj9399.github.io/tags/game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>亚马逊中国电商退出中国</title>
-    <link href="http://dj9399.github.io/post/%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%B8%AD%E5%9B%BD%E7%94%B5%E5%95%86%E9%80%80%E5%87%BA%E4%B8%AD%E5%9B%BD/"/>
-    <id>http://dj9399.github.io/post/亚马逊中国电商退出中国/</id>
-    <published>2019-04-18T16:00:00.000Z</published>
-    <updated>2019-05-03T06:40:29.353Z</updated>
-    
-    <content type="html">&lt;p&gt;4 &amp;#x6708;17 &amp;#x65E5;&amp;#x6709;&amp;#x5A92;&amp;#x4F53;&amp;#x79F0;&amp;#x4E9A;&amp;#x9A6C;&amp;#x900A;&amp;#x5C06;&amp;#x4E8E;&amp;#x672C;&amp;#x5468;&amp;#x5BA3;&amp;#x5E03;&amp;#x5176;&amp;#x4E3B;&amp;#x8425;&amp;#x7535;&amp;#x5546;&amp;#x4E1A;&amp;#x52A1;&amp;#x9000;&amp;#x51FA;&amp;#x4E2D;&amp;#x56FD;&amp;#xFF0C;&amp;#x5F53;&amp;#x5929;&amp;#x8FD8;&amp;#x6709;&amp;#x4E9A;&amp;#x9A6C;&amp;#x900A;&amp;#x51FA;&amp;#x6765;&amp;#x8F9F;&amp;#x8C23;&amp;#xFF0C;&amp;#x4E0D;&amp;#x8FC7;&amp;#x4ECE;&amp;#x65B0;&amp;#x95FB;&amp;#x6765;&amp;#x770B;&amp;#xFF0C;&amp;#x662F;&amp;#x5B8C;&amp;#x5168;&amp;#x771F;&amp;#x5B9E;&amp;#x7684;&amp;#x3002;&amp;#x679C;&amp;#x7136;&amp;#x4ECA;&amp;#x5929;&amp;#x5DF2;&amp;#x7ECF;&amp;#x6B63;&amp;#x5F0F;&amp;#x516C;&amp;#x5E03;&amp;#x4E86;&amp;#x3002;&lt;/p&gt;
-&lt;p&gt;&amp;#x4FFA;&amp;#x89C9;&amp;#x5F97;&amp;#x975E;&amp;#x5E38;&amp;#x53EF;&amp;#x60DC;&amp;#xFF0C;&amp;#x56E0;&amp;#x4E3A;&amp;#x5728;&amp;#x4E9A;&amp;#x9A6C;&amp;#x900A;&amp;#x4E5F;&amp;#x4E70;&amp;#x8FC7;&amp;#x4E0D;&amp;#x5C11;&amp;#x4E1C;&amp;#x4E1C;&amp;#xFF0C;&amp;#x57FA;&amp;#x672C;&amp;#x90FD;&amp;#x662F;&amp;#x7279;&amp;#x4EF7;&amp;#x54C1;&amp;#xFF0C;&amp;#x54C1;&amp;#x8D28;&amp;#x76F8;&amp;#x5F53;&amp;#x597D;&amp;#xFF0C;&amp;#x7279;&amp;#x522B;&amp;#x662F;&amp;#x4E34;&amp;#x671F;&amp;#x98DF;&amp;#x54C1;&amp;#xFF08;&amp;#x4E00;&amp;#x822C;3-5&amp;#x6298;&amp;#xFF09;&amp;#x53E3;&amp;#x611F;&amp;#x4E5F;&amp;#x975E;&amp;#x5E38;&amp;#x4E0D;&amp;#x9519;&amp;#xFF0C;&amp;#x671D;&amp;#x5185;&amp;#x7535;&amp;#x5546;&amp;#x57FA;&amp;#x672C;&amp;#x5C31;&amp;#x662F;&amp;#x6362;&amp;#x4E2A;&amp;#x751F;&amp;#x4EA7;&amp;#x65E5;&amp;#x671F;&amp;#x8D34;&amp;#x7EB8;&amp;#xFF0C;&amp;#x6211;&amp;#x5C31;&amp;#x4ECE;&amp;#x6765;&amp;#x6CA1;&amp;#x89C1;&amp;#x8FC7;&amp;#x5929;&amp;#x732B;&amp;#x3001;&amp;#x4EAC;&amp;#x4E1C;&amp;#x6709;&amp;#x5356;&amp;#x8FC7;&amp;#x4EC0;&amp;#x4E48;&amp;#x4E34;&amp;#x671F;&amp;#x54C1;&amp;#x3002;&amp;#x4FFA;&amp;#x6240;&amp;#x6709;&amp;#x7684;&amp;#x7535;&amp;#x5546;&amp;#x5E73;&amp;#x53F0;&amp;#x4E0A;&amp;#xFF0C;&amp;#x53EA;&amp;#x6709;&amp;#x4E9A;&amp;#x9A6C;&amp;#x900A;&amp;#x6CA1;&amp;#x4E70;&amp;#x5230;&amp;#x8FC7;&amp;#x5751;&amp;#x8D27;&lt;/p&gt;
-&lt;p&gt;&amp;#x8BC4;&amp;#x4EF7;&amp;#xFF1A;&amp;#x7F51;&amp;#x4E0A;&amp;#x5927;&amp;#x90E8;&amp;#x5206;&amp;#x6587;&amp;#x7AE0;&amp;#x8BF4;&amp;#x662F;&amp;#x7531;&amp;#x4E8E;&amp;#x5F3A;&amp;#x9F99;&amp;#x6597;&amp;#x4E0D;&amp;#x8FC7;&amp;#x5730;&amp;#x5934;&amp;#x86C7;&amp;#xFF0C;&amp;#x6211;&amp;#x89C9;&amp;#x5F97;&amp;#x8FD8;&amp;#x6709;&amp;#x90E8;&amp;#x5206;&amp;#x6B7B;&amp;#x4E8E;&amp;#x5929;&amp;#x671D;&amp;#x7535;&amp;#x5546;&amp;#x6F5C;&amp;#x89C4;&amp;#x5219;&amp;#x53CA;&amp;#x8D28;&amp;#x7BA1;&amp;#x90E8;&amp;#x95E8;&amp;#x65E0;&amp;#x4F5C;&amp;#x4E3A;&amp;#x4E4B;&amp;#x624B;&amp;#xFF0C;&amp;#x5728;&amp;#x5404;&amp;#x5927;&amp;#x7535;&amp;#x5546;&amp;#x75AF;&amp;#x72C2;&amp;#x641E;&amp;#x6D3B;&amp;#x52A8;&amp;#xFF0C;&amp;#x7528;&amp;#x52A3;&amp;#x5236;&amp;#x54C1;&amp;#x3001;&amp;#x4E34;&amp;#x671F;&amp;#x54C1;&amp;#x6765;&amp;#x5927;&amp;#x6253;&amp;#x7279;&amp;#x4EF7;&amp;#x5927;&amp;#x641E;&amp;#x6D3B;&amp;#x52A8;&amp;#xFF0C;&amp;#x5438;&amp;#x5F15;&amp;#x5927;&amp;#x91CF;&amp;#x7684;&amp;#x7528;&amp;#x6237;&amp;#xFF0C;&amp;#x4E9A;&amp;#x9A6C;&amp;#x900A;&amp;#x5374;&amp;#x4E00;&amp;#x76F4;&amp;#x4E0D;&amp;#x6E29;&amp;#x4E0D;&amp;#x706B;&amp;#x7684;&amp;#x505A;&amp;#x7740;&amp;#x9AD8;&amp;#x8D28;&amp;#x91CF;&amp;#x9AD8;&amp;#x4EF7;&amp;#x683C;&amp;#x7684;&amp;#x6B63;&amp;#x54C1;&amp;#x751F;&amp;#x610F;&amp;#x3002;&amp;#x4E9A;&amp;#x9A6C;&amp;#x900A;&amp;#x7684;&amp;#x7279;&amp;#x957F;&amp;#x662F;&amp;#x8DE8;&amp;#x5883;&amp;#x7535;&amp;#x5546;&amp;#xFF0C;&amp;#x4F46;&amp;#x5728;&amp;#x671D;&amp;#x5185;&amp;#x9AD8;&amp;#x5173;&amp;#x7A0E;&amp;#x4E0B;&amp;#xFF0C;&amp;#x4E5F;&amp;#x5438;&amp;#x5F15;&amp;#x4E0D;&amp;#x5230;&amp;#x591A;&amp;#x5C11;&amp;#x9AD8;&amp;#x7AEF;&amp;#x7528;&amp;#x6237;&amp;#xFF0C;&amp;#x7528;&amp;#x6237;&amp;#x5B81;&amp;#x613F;&amp;#x8D70;&amp;#x6DD8;&amp;#x5B9D;&amp;#x4EE3;&amp;#x8D2D;&amp;#xFF0C;&amp;#x6216;&amp;#x8005;&amp;#x8DE8;&amp;#x5883;&amp;#x7269;&amp;#x6D41;&amp;#xFF0C;&amp;#x8FD9;&amp;#x6837;&amp;#x90FD;&amp;#x6709;&amp;#x9AD8;&amp;#x673A;&amp;#x7387;&amp;#x907F;&amp;#x5F00;&amp;#x4EA4;&amp;#x7A0E;&amp;#x3002;&amp;#x518D;&amp;#x6B21;&amp;#x8BC1;&amp;#x5B9E;&amp;#xFF1A;&amp;#x5728;&amp;#x671D;&amp;#x5185;&amp;#x6B63;&amp;#x76F4;&amp;#x7684;&amp;#x516C;&amp;#x53F8;&amp;#x662F;&amp;#x65E0;&amp;#x6CD5;&amp;#x751F;&amp;#x5B58;&amp;#x7684;&amp;#xFF0C;&amp;#x4F60;&amp;#x5F97;&amp;#x591A;&amp;#x641E;&amp;#x641E;996&amp;#xFF0C;&amp;#x6697;&amp;#x4E2D;&amp;#x5047;&amp;#x7A0E;&amp;#x5047;&amp;#x5E10;&amp;#x5047;&amp;#x8D27;&amp;#xFF0C;&amp;#x4E8C;&amp;#x624B;&amp;#x5145;&amp;#x65B0;&amp;#x2026;..&amp;#x4F60;&amp;#x624D;&amp;#x80FD;&amp;#x98CE;&amp;#x751F;&amp;#x6C34;&amp;#x8D77;&lt;/p&gt;
-&lt;p&gt;4.26&lt;/p&gt;
-&lt;p&gt;&amp;#x4ECA;&amp;#x5929;&amp;#x624D;&amp;#x5F97;&amp;#x77E5;&amp;#x516C;&amp;#x53F8;&amp;#x65C1;&amp;#x8FB9;&amp;#x4E00;&amp;#x5BB6;&amp;#x6C83;&amp;#x5C14;&amp;#x739B;&amp;#x4E5F;&amp;#x5173;&amp;#x5E97;&amp;#x4E86;&amp;#xFF0C;&amp;#x7F51;&amp;#x4E0A;&amp;#x4E00;&amp;#x67E5;&amp;#x5168;&amp;#x56FD;&amp;#x4E00;&amp;#x7247;&amp;#x8D85;&amp;#x5E02;&amp;#x5173;&amp;#x5E97;&amp;#x6F6E;&amp;#xFF0C;&amp;#x5176;&amp;#x5B83;&amp;#x8D85;&amp;#x5E02;&amp;#x5173;&amp;#x518D;&amp;#x591A;&amp;#x4FFA;&amp;#x4E5F;&amp;#x65E0;&amp;#x6240;&amp;#x8C13;&amp;#xFF0C;&amp;#x4F46;&amp;#x5C31;&amp;#x6DF1;&amp;#x5733;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x6C83;&amp;#x5C14;&amp;#x739B;&amp;#x548C;&amp;#x5BB6;&amp;#x4E50;&amp;#x798F;&amp;#x662F;&amp;#x4E8C;&amp;#x5BB6;&amp;#x8D28;&amp;#x91CF;&amp;#x597D;&amp;#x4EF7;&amp;#x683C;&amp;#x4E5F;&amp;#x7B97;&amp;#x4F18;&amp;#x60E0;&amp;#x7684;&amp;#x8001;&amp;#x5E97;&amp;#xFF0C;&amp;#x53EF;&amp;#x60DC;&amp;#x4E86;&amp;#x53C8;&amp;#x662F;&amp;#x4E00;&amp;#x5BB6;&amp;#x597D;&amp;#x5E97;&amp;#x6D88;&amp;#x5931;&amp;#x4E86;&amp;#x3002;&amp;#x6211;&amp;#x5C31;&amp;#x60F3;&amp;#x770B;&amp;#x770B;&amp;#x6CB3;&amp;#x9A6C;&amp;#x80FD;&amp;#x633A;&amp;#x591A;&amp;#x4E45;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;4 &amp;#x6708;17 &amp;#x65E5;&amp;#x6709;&amp;#x5A92;&amp;#x4F53;&amp;#x79F0;&amp;#x4E9A;&amp;#x9A6C;&amp;#x900A;&amp;#x5C06;&amp;#x4E8E;&amp;#x672C;&amp;#x5468;&amp;#x5BA3;&amp;#x5E03;&amp;#x5176;&amp;#x4
-    
-    </summary>
-    
-    
-      <category term="网购" scheme="http://dj9399.github.io/tags/%E7%BD%91%E8%B4%AD/"/>
     
   </entry>
   
