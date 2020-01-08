@@ -369,6 +369,9 @@
           
   <div class="comments" id="comments">
     
+		<div class="comments" id="comments">
+			<div id="gitalk-container"></div>
+		</div>
   </div>
 
 
@@ -560,6 +563,24 @@
 
   <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
+
+<!-- themes/[theme_name]/layout/_script/comments.swig -->
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '435966ed474af355f90b',
+          clientSecret: '823f6a38ab597207732b6900bd08ef9463165d70',
+          repo: 'dj9399.github.io',
+          owner: 'dj9399',
+          admin: ['['dj9399']'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'false'
+        })
+        gitalk.render('gitalk-container')
+       </script>
 
 
   
