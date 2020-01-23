@@ -1,0 +1,753 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="diy,树莓派," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="sens" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="树莓派监控motionEyeOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="树莓派监控">
+<meta property="og:url" content="http://dj9399.github.io/post/树莓派监控/index.html">
+<meta property="og:site_name" content="sens">
+<meta property="og:description" content="树莓派监控motionEyeOS">
+<meta property="og:updated_time" content="2020-01-20T03:59:22.373Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="树莓派监控">
+<meta name="twitter:description" content="树莓派监控motionEyeOS">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: undefined,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://dj9399.github.io/post/树莓派监控/"/>
+
+  <title> 树莓派监控 | sens </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">sens</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Sound.Earth.Nature.Spirit.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                树莓派监控
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2020-01-12T00:00:00+08:00" content="2020-01-12">
+              2020-01-12
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>&#x7A81;&#x7136;&#x60F3;&#x6298;&#x78E8;&#x4E0B;&#xFF0C;&#x4E8E;&#x662F;&#x67E5;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x6811;&#x8393;&#x6D3E;&#x9002;&#x7528;&#x7684;CSI&#x6444;&#x50CF;&#x5934;&#x6700;&#x4FBF;&#x5B9C;&#xFF0C;&#x624D;20&#x5757;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E5F;&#x6709;&#x5F00;&#x6E90;&#x7684;motionEyeOS&#xFF0C;&#x770B;&#x4E86;&#x4E0B;&#x5DF2;&#x7ECF;&#x5F88;&#x6210;&#x719F;&#x4E86;<br>&#x4E8E;&#x662F;&#x6709;&#x4E86;&#x4EE5;&#x4E0B;&#x9700;&#x6C42;&#xFF1A;&#x5F53;&#x4E0D;&#x5728;&#x623F;&#x95F4;&#x65F6;&#xFF0C;&#x5BF9;&#x623F;&#x95F4;&#x8FDB;&#x884C;&#x52A8;&#x4F5C;&#x6355;&#x6349;&#x5E76;&#x62CD;&#x7167;&#xFF0C;&#x6700;&#x597D;&#x80FD;&#x4E0A;&#x4F20;&#x90AE;&#x4EF6;&#x6216;&#x7F51;&#x76D8;&#x3002;&#x6BD5;&#x7ADF;&#x6625;&#x8282;&#x8981;&#x6765;&#x4E86;<br>&#x6DD8;&#x5B9D;&#x5165;&#x624B;OV5647 500&#x4E07;&#x50CF;&#x7D20; &#x5149;&#x5708;2.9 &#x89C6;&#x89D2; 75&#x5EA6; &#x6700;&#x9AD8;&#x652F;&#x6301;1080P &#x5176;&#x5B9E;&#x753B;&#x8D28;&#x8FD8;&#x4E0D;&#x5230;720&#xFF0C;&#x4E0D;&#x8FC7;&#x4FBF;&#x5B9C;&#x591F;&#x7528;&#xFF0C;&#x52A0;&#x90AE;&#x8D39;32&#x5230;&#x624B;<br>&#x5B89;&#x88C5;&#x597D;motionEyeOS&#x7CFB;&#x7EDF;&#x540E;&#xFF0C;&#x542F;&#x52A8;&#x63D0;&#x793A;&#x8981;&#x6709;&#x7F51;&#x7EDC;&#xFF0C;&#x56E0;&#x6CA1;&#x6709;&#x591A;&#x4F59;&#x7684;&#x7F51;&#x7EBF;&#xFF0C;&#x53EA;&#x597D;&#x624B;&#x5199;SD&#x5361;&#x4E2D;&#x7684;wpa_supplicant.conf&#x4EE5;&#x8FDE;&#x63A5;WIFI<br>&#x9ED8;&#x8BA4;&#x7528;&#x6237;&#x540D;&#x4E3A;&#x201C;admin&#x201D;&#xFF0C;&#x7A7A;&#x767D;&#x5BC6;&#x7801;&#xFF0C;&#x76F4;&#x63A5;&#x5C31;&#x80FD;&#x8BC6;&#x522B;&#x5230;&#x6444;&#x50CF;&#x5934;&#xFF0C;&#x65B9;&#x4FBF;<br>&#x8BBF;&#x95EE;WEB&#x5F88;&#x6D41;&#x7545;&#xFF0C;&#x5168;&#x82F1;&#x6587;&#x4F46;&#x4E0D;&#x96BE;&#xFF0C;&#x82B1;&#x4E86;&#x4E00;&#x5C0F;&#x65F6;&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x597D;&#x4E86;&#x52A8;&#x4F5C;&#x6355;&#x6349;&#x3002;&#x4E0A;&#x4F20;&#x7F51;&#x76D8;&#x53EA;&#x652F;&#x6301;GOOGLE&#x548C;DROPBOX&#xFF0C;&#x5BB6;&#x91CC;&#x8DEF;&#x7531;&#x6CA1;&#x5E26;XX&#xFF0C;&#x53EA;&#x597D;&#x653E;&#x5F03;&#x3002;&#x90AE;&#x4EF6;&#x62A5;&#x8B66;&#x914D;&#x7F6E;&#x4E86;SINA&#x548C;163&#x90FD;&#x6D4B;&#x8BD5;&#x5931;&#x8D25;&#xFF0C;&#x5148;&#x653E;&#x5F03;&#xFF0C;&#x91C7;&#x7528;&#x6700;&#x7B80;&#x5355;&#x65B9;&#x5F0F;&#xFF1A;&#x7167;&#x7247;&#x4FDD;&#x5B58;&#x672C;&#x5730;SD&#x5361;<br>&#x7B80;&#x5355;&#x603B;&#x7ED3;&#xFF1A;&#x82B1;&#x8D39;32&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x76D1;&#x63A7;&#x623F;&#x95F4;&#x5E76;&#x53EF;&#x5347;&#x7EA7;&#x6269;&#x5C55;&#xFF0C;&#x8FD8;&#x662F;&#x6EE1;&#x4E0D;&#x9519;&#x7684;&#xFF0C;&#x81F3;&#x5C11;&#x6BD4;&#x8D77;&#x5E02;&#x9762;&#x4E0A;&#x540C;&#x7C7B;200&#x5143;&#x4E0A;&#x4E0B;&#x7684;&#x4EA7;&#x54C1;&#xFF0C;&#x8981;&#x5B9E;&#x60E0;&#x591A;&#x4E86;&#x3002;&#x8BA9;&#x6211;&#x518D;&#x6B21;&#x89C1;&#x8BC6;&#x4E86;&#x5F00;&#x6E90;&#x7684;&#x5A01;&#x529B;<br>&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x8BB0;&#x5F55;&#xFF1A;<br>wpa_supplicant.conf&#xFF1A;<br>country=CN<br>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev<br>update_config=1</p>
+<p>network={<br>ssid=&#x201D;&#x4F60;WIFI&#x201D;<br>key_mgmt=WPA-PSK<br>psk=&#x201D;&#x4F60;WIFI&#x5BC6;&#x7801;&#x201D;<br>}</p>
+<p>motionEyeOS&#x4ECD;&#x9700;&#x8981;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x624D;&#x80FD;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF1B;&#x5982;&#x679C;&#x60A8;&#x771F;&#x7684;&#x4E0D;&#x60F3;/&#x4E0D;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#xFF0C;<br>&#x8BF7;&#x8BBE;&#x7F6E;/<a href="http://data/etc/os.conf" target="_blank" rel="external">data/etc/os.conf</a> &#x4E2D;os_networkless&#x4E3A;true&#xFF0C;&#x5982;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#xFF0C;&#x5219;&#x4F7F;&#x7528;/boot/os.conf&#x8BBE;&#x7F6E;<br>Why do I get Read-only file system when trying to edit a file&#xFF1A;mount -o remount,rw /etc<br>experct settings&#x4E2D;&#x6539;&#x4E3A;NTP&#xFF0C;&#x4F7F;&#x7528;&#x56FD;&#x5185;NTP&#x670D;&#x52A1;&#x5668;&#xFF1A;<a href="http://ntp1.aliyun.com/" target="_blank" rel="external">ntp1.aliyun.com</a><br>/etc/proftpd.conf<br>/etc/samba/smb.conf<br>EDITOR=nano crontab -e<br>30 19 <em> </em> *  /sbin/halt now</p>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;<br>1&#x3001;&#x5B98;&#x65B9;WIKI<br>2&#x3001;<a href="http://shumeipai.nxez.com/2019/04/17/raspberry-pi-zero-w-cctv-camera-with-motioneyeos.html" target="_blank" rel="external">http://shumeipai.nxez.com/2019/04/17/raspberry-pi-zero-w-cctv-camera-with-motioneyeos.html</a>  </p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/diy/" rel="tag">#diy</a>
+          
+            <a href="/tags/树莓派/" rel="tag">#树莓派</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/zf干了些什么，把zg经济搞到今天的田地/" rel="next" title="zf干了些什么，把zg经济搞到今天的田地">
+                <i class="fa fa-chevron-left"></i> zf干了些什么，把zg经济搞到今天的田地
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/徒步异见2/" rel="prev" title="徒步异见">
+                徒步异见 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+		<div id="gitalk-container"></div>
+  </div>
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/sidebar_head.jpg"
+               alt="sens" />
+          <p class="site-author-name" itemprop="name">sens</p>
+          <p class="site-description motion-element" itemprop="description">sens是一个基于Github和Hexo的静态Blog，希望用简单而清晰的写作方式Markdown分享自己的心得体会。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">147</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">39</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sens</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<!-- 不蒜统计 -->
+<br>
+
+<span style="display: inline;" id="busuanzi_container_site_uv">本站总访客数 <span id="busuanzi_value_site_uv" font="微软雅黑" ></span> 次</span>
+<span style="display: inline;" id="busuanzi_container_page_pv">本文总阅读量 <span id="busuanzi_value_page_pv" font="微软雅黑" ></span> 次</span>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+<!-- themes/[theme_name]/layout/_script/comments.swig -->
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '435966ed474af355f90b',
+          clientSecret: '823f6a38ab597207732b6900bd08ef9463165d70',
+          repo: 'gitalk',
+          owner: 'dj9399',
+          admin: ['dj9399'],
+          id: md5(window.location.pathname),
+          distractionFreeMode: 'false'
+        })
+        gitalk.render('gitalk-container')
+       </script>
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
