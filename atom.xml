@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dj9399.github.io/"/>
-  <updated>2021-06-03T07:33:52.317Z</updated>
+  <updated>2021-07-02T07:06:08.587Z</updated>
   <id>http://dj9399.github.io/</id>
   
   <author>
@@ -16,11 +16,87 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://dj9399.github.io/post/vx/"/>
+    <id>http://dj9399.github.io/post/vx/</id>
+    <published>2021-07-02T07:48:36.743Z</published>
+    <updated>2021-07-02T07:06:08.587Z</updated>
+    
+    <content type="html">{&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;files&amp;quot;:[{&amp;quot;attachment_folder&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;id&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;modified_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;2021&amp;#x5E74;618.md&amp;quot;,&amp;quot;tags&amp;quot;:[]},{&amp;quot;attachment_folder&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;id&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;modified_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;about clubhouse.md&amp;quot;,&amp;quot;tags&amp;quot;:[]},{&amp;quot;attachment_folder&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;id&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;modified_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;&amp;#x95F2;&amp;#x8A00;&amp;#x788E;&amp;#x8BED;.md&amp;quot;,&amp;quot;tags&amp;quot;:[]}],&amp;quot;folders&amp;quot;:[{&amp;quot;name&amp;quot;:&amp;quot;vx_recycle_bin&amp;quot;}],&amp;quot;id&amp;quot;:&amp;quot;1&amp;quot;,&amp;quot;modified_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1&amp;quot;}</content>
+    
+    <summary type="html">
+    
+      {&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;files&amp;quot;:[{&amp;quot;attachment_folder&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;created_time
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://dj9399.github.io/post/vx_recycle_bin/vx/"/>
+    <id>http://dj9399.github.io/post/vx_recycle_bin/vx/</id>
+    <published>2021-07-02T07:48:36.742Z</published>
+    <updated>2021-07-02T07:06:08.584Z</updated>
+    
+    <content type="html">{&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;files&amp;quot;:[],&amp;quot;folders&amp;quot;:[],&amp;quot;id&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;modified_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1&amp;quot;}</content>
+    
+    <summary type="html">
+    
+      {&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;files&amp;quot;:[],&amp;quot;folders&amp;quot;:[],&amp;quot;id&amp;quot;:&amp;quot;0&amp;quot;,&amp;quot;mo
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://dj9399.github.io/post/vx_notebook/vx_notebook/"/>
+    <id>http://dj9399.github.io/post/vx_notebook/vx_notebook/</id>
+    <published>2021-07-02T07:48:36.740Z</published>
+    <updated>2021-07-02T07:06:08.580Z</updated>
+    
+    <content type="html">{&amp;quot;attachment_folder&amp;quot;:&amp;quot;vx_attachments&amp;quot;,&amp;quot;config_mgr&amp;quot;:&amp;quot;vx.vnotex&amp;quot;,&amp;quot;created_time&amp;quot;:&amp;quot;2021-07-02T07:06:08Z&amp;quot;,&amp;quot;description&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;image_folder&amp;quot;:&amp;quot;vx_images&amp;quot;,&amp;quot;name&amp;quot;:&amp;quot;source&amp;quot;,&amp;quot;next_node_id&amp;quot;:&amp;quot;2&amp;quot;,&amp;quot;version&amp;quot;:&amp;quot;1&amp;quot;,&amp;quot;version_controller&amp;quot;:&amp;quot;dummy.vnotex&amp;quot;}</content>
+    
+    <summary type="html">
+    
+      {&amp;quot;attachment_folder&amp;quot;:&amp;quot;vx_attachments&amp;quot;,&amp;quot;config_mgr&amp;quot;:&amp;quot;vx.vnotex&amp;quot;,&amp;quot;created_time&amp;quot;:&amp;quot;2021-0
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>华语天王-黃明志</title>
+    <link href="http://dj9399.github.io/post/%E5%8D%8E%E8%AF%AD%E5%A4%A9%E7%8E%8B-%E9%BB%83%E6%98%8E%E5%BF%97/"/>
+    <id>http://dj9399.github.io/post/华语天王-黃明志/</id>
+    <published>2021-06-27T16:00:00.000Z</published>
+    <updated>2021-06-28T02:20:21.849Z</updated>
+    
+    <content type="html">&lt;p&gt;&amp;#x4E8C;&amp;#x5929;&amp;#x524D;&amp;#x7A81;&amp;#x7136;&amp;#x88AB;&amp;#x63A8;&amp;#x5230;&amp;#x4E00;&amp;#x9996;&amp;#x9EC3;&amp;#x660E;&amp;#x5FD7;&amp;#x7684;RAP&amp;#x300A;You Know Who Is My Father&amp;#x300B;&amp;#x3002;&amp;#x7206;&amp;#x7B11;&amp;#x4E4B;&amp;#x4F59;&amp;#xFF0C;&amp;#x7EE7;&amp;#x7EED;&amp;#x770B;&amp;#x4E86;&amp;#x4E00;&amp;#x4E9B;&amp;#x5173;&amp;#x4E8E;&amp;#x4ED6;&amp;#x7684;&amp;#x5A31;&amp;#x4E50;&amp;#x91C7;&amp;#x8BBF;&amp;#x82B1;&amp;#x7D6E;&amp;#xFF0C;&amp;#x611F;&amp;#x89C9;&amp;#x6B64;&amp;#x4EBA;&amp;#x5F88;&amp;#x4E0D;&amp;#x7B80;&amp;#x5355;&amp;#xFF0C;&amp;#x4F5C;&amp;#x4E3A;&amp;#x4E00;&amp;#x4E2A;&amp;#x827A;&amp;#x4EBA;&amp;#xFF0C;&amp;#x6562;&amp;#x516C;&amp;#x8C08;&amp;#x81EA;&amp;#x5DF1;&amp;#x7684;&amp;#x653F;&amp;#x89C1;&amp;#xFF0C;&amp;#x534E;&amp;#x4EBA;&amp;#x5708;&amp;#x5E73;&amp;#x751F;&amp;#x9996;&amp;#x89C1;&amp;#x3002;&amp;#x4E8E;&amp;#x662F;&amp;#x5468;&amp;#x672A;&amp;#x641C;&amp;#x7D22;&amp;#x4E86;&amp;#x4E0B;&amp;#x5176;&amp;#x8D44;&amp;#x6599;&amp;#xFF0C;&amp;#x5E76;&amp;#x6253;&amp;#x5F00;&amp;#x9EC3;&amp;#x660E;&amp;#x5FD7;&amp;#x6CB9;&amp;#x7BA1;&amp;#x4E3B;&amp;#x9875;&amp;#xFF0C;&amp;#x7ED3;&amp;#x679C;&amp;#x4E8C;&amp;#x5929;&amp;#x90FD;&amp;#x6CE1;&amp;#x5728;&amp;#x91CC;&amp;#x9762;&amp;#x3002;&amp;#x6211;&amp;#x60CA;&amp;#x5446;&amp;#x4E86;&amp;#xFF0C;&amp;#x7ADF;&amp;#x7136;&amp;#x5728;&amp;#x4E00;&amp;#x4F4D;&amp;#x534E;&amp;#x8BED;&amp;#x5929;&amp;#x738B;&amp;#x6210;&amp;#x540D;13&amp;#x5E74;&amp;#x540E;&amp;#xFF0C;&amp;#x624D;&amp;#x8BA4;&amp;#x8BC6;&amp;#x3002;&amp;#x7ADF;&amp;#x7136;&amp;#x6211;&amp;#x5E76;&amp;#x4E0D;&amp;#x592A;&amp;#x559C;&amp;#x6B22;RAP&amp;#x548C;&amp;#x6D41;&amp;#x884C;&amp;#xFF0C;&amp;#x4F46;&amp;#x4ED6;&amp;#x7684;&amp;#x6562;&amp;#x8BF4;&amp;#x6562;&amp;#x505A;&amp;#xFF0C;&amp;#x4ED6;&amp;#x7684;RAP&amp;#xFF0C;&amp;#x4ED6;&amp;#x7684;&amp;#x97F3;&amp;#x4E50;&amp;#xFF0C;&amp;#x4ED6;&amp;#x7684;&amp;#x6C11;&amp;#x6743;&amp;#xFF0C;&amp;#x4ED6;&amp;#x7684;&amp;#x793E;&amp;#x4F1A;&amp;#x6D1E;&amp;#x89C1;&amp;#xFF0C;&amp;#x4ED6;&amp;#x7684;&amp;#x641E;&amp;#x7B11;&amp;#xFF0C;&amp;#x7EDD;&amp;#x5BF9;&amp;#x662F;&amp;#x4E00;&amp;#x4F4D;&amp;#x7EFC;&amp;#x5408;&amp;#x5B9E;&amp;#x529B;&amp;#x8FDC;&amp;#x8D85;&amp;#x5468;&amp;#x6770;&amp;#x4F26;&amp;#x7684;&amp;#x97F3;&amp;#x4E50;&amp;#x5927;&amp;#x5E08;&lt;/p&gt;
+&lt;p&gt;&amp;#x592A;&amp;#x68D2;&amp;#x4E86;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x4E8C;&amp;#x5929;&amp;#x524D;&amp;#x7A81;&amp;#x7136;&amp;#x88AB;&amp;#x63A8;&amp;#x5230;&amp;#x4E00;&amp;#x9996;&amp;#x9EC3;&amp;#x660E;&amp;#x5FD7;&amp;#x7684;RAP&amp;#x300A;You Know Who I
+    
+    </summary>
+    
+    
+      <category term="music" scheme="http://dj9399.github.io/tags/music/"/>
+    
+  </entry>
+  
+  <entry>
     <title>论躺平的姿势</title>
     <link href="http://dj9399.github.io/post/%E8%AE%BA%E8%BA%BA%E5%B9%B3%E7%9A%84%E5%A7%BF%E5%8A%BF/"/>
     <id>http://dj9399.github.io/post/论躺平的姿势/</id>
     <published>2021-06-02T16:00:00.000Z</published>
-    <updated>2021-06-03T07:33:52.317Z</updated>
+    <updated>2021-06-16T06:31:52.268Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#x4FFA;&amp;#x4ECE;12&amp;#x5E74;&amp;#x5F00;&amp;#x59CB;&amp;#x4FA7;&amp;#x8EBA;&amp;#x5230;&amp;#x73B0;&amp;#x5728;&amp;#xFF0C;&amp;#x4E5F;&amp;#x7ECF;&amp;#x5E38;&amp;#x5728;BLOG&amp;#x548C;&amp;#x7559;&amp;#x8A00;&amp;#x4E2D;&amp;#x89C4;&amp;#x529D;&amp;#x7F51;&amp;#x53CB;&amp;#x4F4E;&amp;#x6B32;&amp;#x671B;&amp;#x3002;&amp;#x521A;&amp;#x597D;&amp;#x4E0D;64&amp;#x4E86;&amp;#x5417;&amp;#xFF0C;&amp;#x68AF;&amp;#x5B50;&amp;#x96C6;&amp;#x4F53;&amp;#x7F62;&amp;#x5DE5;&amp;#xFF0C;&amp;#x56E0;&amp;#x6B64;&amp;#x4E5F;&amp;#x6253;&amp;#x7B97;&amp;#x5728;&amp;#x5F53;&amp;#x524D;&amp;#x70ED;&amp;#x5EA6;&amp;#x4E0B;&amp;#x5199;&amp;#x70B9;&amp;#x4E1C;&amp;#x897F;&amp;#x7F62;&amp;#x3002;&lt;/p&gt;
 &lt;p&gt;&amp;#x8EBA;&amp;#x5E73;&amp;#x662F;&amp;#x4E00;&amp;#x672C;&amp;#x5B66;&amp;#x95EE;&amp;#xFF0C;&amp;#x4EC0;&amp;#x4E48;&amp;#x65F6;&amp;#x5019;&amp;#x8EBA;&amp;#xFF0C;&amp;#x4EC0;&amp;#x4E48;&amp;#x59FF;&amp;#x52BF;&amp;#x8EBA;&amp;#xFF0C;&amp;#x90FD;&amp;#x662F;&amp;#x5927;&amp;#x6709;&amp;#x8BB2;&amp;#x7A76;&amp;#x3002;&amp;#x4F46;&amp;#x51E1;&amp;#x6709;&amp;#x94B1;&amp;#x4EBA;&amp;#x4E0D;&amp;#x4F1A;&amp;#x8EBA;&amp;#xFF0C;&amp;#x4ED6;&amp;#x4EEC;&amp;#x6C38;&amp;#x8FDC;&amp;#x6563;&amp;#x53D1;&amp;#x7740;&amp;#x9752;&amp;#x6625;&amp;#x6D3B;&amp;#x529B;&amp;#xFF0C;&amp;#x6068;&amp;#x4E0D;&amp;#x5F97;&amp;#x5229;&amp;#x7528;&amp;#x6BCF;&amp;#x5206;&amp;#x6BCF;&amp;#x79D2;&amp;#x53BB;&amp;#x5403;&amp;#x559D;&amp;#x73A9;&amp;#x4E50;&amp;#xFF08;&amp;#x5AD6;&amp;#x8D4C;&amp;#xFF09;&amp;#x3002;&amp;#x53EA;&amp;#x6709;&amp;#x7A77;&amp;#x4EBA;&amp;#x3001;&amp;#x6253;&amp;#x5DE5;&amp;#x4EBA;&amp;#x624D;&amp;#x4F1A;&amp;#x5728;&amp;#x5DE5;&amp;#x4F5C;&amp;#x4E4B;&amp;#x4F59;&amp;#xFF0C;&amp;#x5229;&amp;#x7528;&amp;#x6BCF;&amp;#x5206;&amp;#x6BCF;&amp;#x79D2;&amp;#x6765;&amp;#x8EBA;&amp;#x4F1A;&amp;#x3002;&amp;#x8EBA;&amp;#x7684;&amp;#x59FF;&amp;#x52BF;&amp;#x4E5F;&amp;#x5F97;&amp;#x56E0;&amp;#x4EBA;&amp;#x800C;&amp;#x5F02;&amp;#xFF0C;&amp;#x5A36;&amp;#x4E86;&amp;#x8001;&amp;#x5A46;&amp;#x751F;&amp;#x4E86;&amp;#x5B69;&amp;#x5B50;&amp;#x7684;&amp;#x6CA1;&amp;#x529E;&amp;#x6CD5;&amp;#x8EBA;&amp;#xFF0C;&amp;#x521A;&amp;#x60F3;&amp;#x8EBA;&amp;#xFF0C;&amp;#x5B69;&amp;#x5B50;&amp;#x8981;&amp;#x4E0A;&amp;#x5B66;&amp;#x3001;&amp;#x5403;&amp;#x996D;&amp;#xFF0C;&amp;#x8001;&amp;#x5A46;&amp;#x8981;&amp;#x5316;&amp;#x5986;&amp;#x54C1;&amp;#x3001;&amp;#x5BB6;&amp;#x7535;&amp;#xFF0C;&amp;#x5BB6;&amp;#x91CC;&amp;#x8FD8;&amp;#x623F;&amp;#x8D37;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E0D;&amp;#x8FD8;&amp;#x6765;&amp;#x4E09;&amp;#x80CE;&amp;#xFF0C;&amp;#x5C31;&amp;#x7B97;&amp;#x8001;&amp;#x4E86;&amp;#x8FD8;&amp;#x5F97;&amp;#x517B;9&amp;#x4E2A;&amp;#x5B59;&amp;#x5B50;&amp;#xFF0C;&amp;#x8FD9;&amp;#x8F88;&amp;#x5B50;&amp;#x662F;&amp;#x4E0D;&amp;#x53EF;&amp;#x80FD;&amp;#x8EBA;&amp;#x4E86;&amp;#x3002;&amp;#x5A36;&amp;#x4E86;&amp;#x8001;&amp;#x5A46;&amp;#x53EA;&amp;#x6709;&amp;#x623F;&amp;#x5B50;&amp;#x7684;&amp;#xFF0C;70&amp;#x5EA6;&amp;#x4F9D;&amp;#x5899;&amp;#x8EBA;&amp;#xFF0C;&amp;#x521A;&amp;#x8EBA;&amp;#x5230;&amp;#x4E09;&amp;#x5206;&amp;#x70ED;&amp;#xFF0C;&amp;#x8001;&amp;#x5A46;&amp;#x623F;&amp;#x8D37;&amp;#x53C8;&amp;#x50AC;&amp;#x4F60;&amp;#x8D77;&amp;#x6765;&amp;#x3002;&amp;#x521A;&amp;#x5A36;&amp;#x4E86;&amp;#x8001;&amp;#x5A46;&amp;#x7684;&amp;#xFF0C;&amp;#x8FD8;&amp;#x6CA1;&amp;#x623F;&amp;#x7684;&amp;#x603B;&amp;#x7B97;&amp;#x597D;&amp;#x70B9;&amp;#x53EF;&amp;#x4EE5;45&amp;#x5EA6;&amp;#x659C;&amp;#x8EBA;&amp;#xFF0C;&amp;#x4E0D;&amp;#x8FC7;&amp;#x4E5F;&amp;#x9006;&amp;#x4E0D;&amp;#x8FC7;&amp;#x8001;&amp;#x5A46;&amp;#x623F;&amp;#x5B50;&amp;#xFF0C;&amp;#x8EBA;&amp;#x5230;&amp;#x4E94;&amp;#x5206;&amp;#x9189;&amp;#x4E5F;&amp;#x5F97;&amp;#x5E72;&amp;#x6D3B;&amp;#x53BB;&amp;#x3002;&amp;#x6CA1;&amp;#x5A36;&amp;#x8001;&amp;#x5A46;&amp;#x7684;&amp;#x6709;&amp;#x798F;&amp;#x4E86;&amp;#xFF0C;0-90&amp;#x5EA6;&amp;#xFF0C;&amp;#x5404;&amp;#x79CD;&amp;#x89D2;&amp;#x5EA6;&amp;#x8EBA;&amp;#x6CD5;&amp;#x4EFB;&amp;#x541B;&amp;#x9009;&amp;#x62E9;&amp;#xFF1B;&amp;#x53EF;&amp;#x95EE;&amp;#x9898;&amp;#x53C8;&amp;#x6765;&amp;#x4E86;&amp;#xFF0C;&amp;#x6B32;&amp;#x671B;&amp;#x603B;&amp;#x662F;&amp;#x6709;&amp;#x7684;&amp;#xFF0C;&amp;#x8001;&amp;#x5A46;&amp;#x603B;&amp;#x662F;&amp;#x60F3;&amp;#x7684;&amp;#xFF0C;&amp;#x5BB6;&amp;#x4EBA;&amp;#x603B;&amp;#x662F;&amp;#x50AC;&amp;#x7684;&amp;#xFF0C;&amp;#x4E8E;&amp;#x662F;&amp;#x4E4E;&amp;#xFF0C;&amp;#x5927;&amp;#x591A;&amp;#x4ECE;&amp;#x8EBA;0&amp;#x5EA6;&amp;#xFF0C;&amp;#x6162;&amp;#x6162;&amp;#x5347;&amp;#x5230;90&amp;#x5EA6;&amp;#xFF0C;&amp;#x4ECE;&amp;#x6B64;&amp;#x544A;&amp;#x522B;&amp;#x8EBA;&amp;#x5E73;&amp;#x65CF;&amp;#xFF0C;&amp;#x6210;&amp;#x4E3A;&amp;#x8131;&amp;#x79BB;&amp;#x4F4E;&amp;#x7EA7;&amp;#x6B32;&amp;#x671B;&amp;#x7684;&amp;#x4EBA;&amp;#x3002;&lt;/p&gt;
@@ -34,7 +110,7 @@
     </summary>
     
     
-      <category term="闲扯" scheme="http://dj9399.github.io/tags/%E9%97%B2%E6%89%AF/"/>
+      <category term="心境" scheme="http://dj9399.github.io/tags/%E5%BF%83%E5%A2%83/"/>
     
   </entry>
   
@@ -405,110 +481,6 @@
     
     
       <category term="闲扯" scheme="http://dj9399.github.io/tags/%E9%97%B2%E6%89%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>无题</title>
-    <link href="http://dj9399.github.io/post/%E6%97%A0%E9%A2%9819/"/>
-    <id>http://dj9399.github.io/post/无题19/</id>
-    <published>2021-04-06T16:00:00.000Z</published>
-    <updated>2021-04-07T09:16:55.479Z</updated>
-    
-    <content type="html">&lt;p&gt;&amp;#x770B;&amp;#x5230;V2EX&amp;#x4E0A;&amp;#x4E00;&amp;#x5219;&amp;#x6D88;&amp;#x606F;&amp;#x8BF4;&amp;#x662F;Magisk&amp;#x5237; Pixel 5 &amp;#x6A21;&amp;#x5757;&amp;#x6539;&amp;#x673A;&amp;#x578B;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;GOOGLE&amp;#x76F8;&amp;#x518C;&amp;#x65E0;&amp;#x9650;&amp;#x4E0A;&amp;#x4F20;&amp;#xFF0C;&amp;#x82B1;&amp;#x4E86;&amp;#x4E8C;&amp;#x4E2A;&amp;#x5C0F;&amp;#x65F6;&amp;#x6D4B;&amp;#x8BD5;&amp;#x4E86;&amp;#x4E0B;&amp;#xFF0C;&amp;#x6839;&amp;#x672C;&amp;#x4E0D;&amp;#x884C;&amp;#x554A;&amp;#x3002;&amp;#x8585;GOOGLE&amp;#x7684;&amp;#x7F8A;&amp;#x6BDB;&amp;#x6839;&amp;#x672C;&amp;#x4E0D;&amp;#x884C;&amp;#x561B;&lt;/p&gt;
-&lt;p&gt;&amp;#x53E6;&amp;#x5916;&amp;#x516C;&amp;#x53F8;&amp;#x9999;&amp;#x6E2F;&amp;#x4E13;&amp;#x7EBF;&amp;#x8FD9;&amp;#x51E0;&amp;#x5929;&amp;#x8D8A;&amp;#x6765;&amp;#x8D8A;&amp;#x4E0D;&amp;#x7ED9;&amp;#x529B;&amp;#xFF0C;&amp;#x8BBF;&amp;#x95EE;GOOGLE&amp;#x8001;&amp;#x662F;&amp;#x51FA;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x6D4B;&amp;#x8BD5;&amp;#x4E00;&amp;#x756A;&amp;#xFF0C; &amp;#x53D1;&amp;#x73B0;&amp;#x9999;&amp;#x6E2F;&amp;#x7EBF;&amp;#x8DEF;DNS&amp;#x4E5F;&amp;#x88AB;&amp;#x6C61;&amp;#x67D3;&amp;#x4E86;&amp;#x3002;&amp;#x6211;&amp;#x4EFF;&amp;#x4F5B;&amp;#x7A7F;&amp;#x8D8A;&amp;#x5230;&amp;#x4E86;2008&amp;#x5E74;&amp;#xFF0C;&amp;#x770B;&amp;#x6765;&amp;#x9999;&amp;#x6E2F;&amp;#x7F51;&amp;#x7EDC;&amp;#x6B63;&amp;#x5728;&amp;#x52A0;&amp;#x901F;&amp;#x6CA6;&amp;#x9677;&amp;#x4E2D;&amp;#x3002;&amp;#x6682;&amp;#x65F6;&amp;#x624B;&amp;#x52A8;&amp;#x8BBE;&amp;#x7F6E;DNS&amp;#x89E3;&amp;#x51B3;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;#x770B;&amp;#x5230;V2EX&amp;#x4E0A;&amp;#x4E00;&amp;#x5219;&amp;#x6D88;&amp;#x606F;&amp;#x8BF4;&amp;#x662F;Magisk&amp;#x5237; Pixel 5 &amp;#x6A21;&amp;#x5757;&amp;#x6539;&amp;#x673A;&amp;#x578
-    
-    </summary>
-    
-    
-      <category term="闲扯" scheme="http://dj9399.github.io/tags/%E9%97%B2%E6%89%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>徒步系列</title>
-    <link href="http://dj9399.github.io/post/%E5%BE%92%E6%AD%A5%E7%B3%BB%E5%88%9702/"/>
-    <id>http://dj9399.github.io/post/徒步系列02/</id>
-    <published>2021-04-06T16:00:00.000Z</published>
-    <updated>2021-04-19T03:31:30.191Z</updated>
-    
-    <content type="html">&lt;p&gt;&amp;#x82B1;&amp;#x5C55;&amp;#x4E4B;&amp;#x540E;&amp;#xFF0C;&amp;#x4E8C;&amp;#x5468;&amp;#x53C8;&amp;#x8FDE;&amp;#x7EED;&amp;#x53BB;&amp;#x770B;&amp;#x4E86;&amp;#x4E8C;&amp;#x6B21;&amp;#xFF0C;&amp;#x56FD;&amp;#x9645;&amp;#x5C55;&amp;#x533A;&amp;#x4E00;&amp;#x76F4;&amp;#x4FDD;&amp;#x7559;&amp;#x7740;&amp;#xFF0C;&amp;#x5176;&amp;#x5B83;&amp;#x7684;&amp;#x5927;&amp;#x90FD;&amp;#x64A4;&amp;#x4E86;&amp;#x3002;&amp;#x4E4B;&amp;#x524D;&amp;#x82B1;&amp;#x5C55;&amp;#x4EBA;&amp;#x592A;&amp;#x591A;&amp;#xFF0C;&amp;#x6CA1;&amp;#x6765;&amp;#x5F97;&amp;#x53CA;&amp;#x7EC6;&amp;#x54C1;&amp;#xFF0C;&amp;#x8FD9;&amp;#x4E8C;&amp;#x6B21;&amp;#x4EBA;&amp;#x5C11;&amp;#x4E86;&amp;#x5F88;&amp;#x591A;&amp;#xFF0C;&amp;#x4ED4;&amp;#x7EC6;&amp;#x770B;&amp;#x4E86;&amp;#xFF0C;&amp;#x624D;&amp;#x53D1;&amp;#x73B0;&amp;#x56FD;&amp;#x9645;&amp;#x5C55;&amp;#x533A;&amp;#x6C34;&amp;#x5E73;&amp;#x771F;&amp;#x7684;&amp;#x662F;&amp;#x9AD8;&amp;#x2026;&amp;#x5176;&amp;#x5B9E;&amp;#x548C;&amp;#x7B2C;&amp;#x4E00;&amp;#x5C4A;&amp;#x4E0D;&amp;#x76F8;&amp;#x4E0A;&amp;#x4E0B;&amp;#x3002;&amp;#x987A;&amp;#x624B;&amp;#x62CD;&amp;#x4E86;&amp;#x51E0;&amp;#x5F20;&amp;#xFF0C;&amp;#x590D;&amp;#x6742;&amp;#x7684;&amp;#x53EA;&amp;#x597D;&amp;#x5F55;&amp;#x50CF;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/04/19/aTg3BhvMUoYxtWl.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/04/19/7RsuAcx3lS51qmB.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/04/19/mE9baPQUlKOxpLe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/04/19/2UeZfgK36yGzjDT.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      仙湖花展2
-    
-    </summary>
-    
-    
-      <category term="徒步" scheme="http://dj9399.github.io/tags/%E5%BE%92%E6%AD%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>无题</title>
-    <link href="http://dj9399.github.io/post/%E6%97%A0%E9%A2%9818/"/>
-    <id>http://dj9399.github.io/post/无题18/</id>
-    <published>2021-04-01T16:00:00.000Z</published>
-    <updated>2021-04-02T03:59:43.438Z</updated>
-    
-    <content type="html">&lt;p&gt;&amp;#x4ECA;&amp;#x5929;&amp;#x770B;&amp;#x5230;&amp;#x7684;&amp;#x65B0;&amp;#x95FB;&amp;#xFF1A;&amp;#x57C3;&amp;#x53CA;&amp;#x62DF;&amp;#x5C31;&amp;#x957F;&amp;#x8D50;&amp;#x53F7;&amp;#x5835;&amp;#x8239;&amp;#x4E8B;&amp;#x4EF6;&amp;#x7D22;&amp;#x8D54;10&amp;#x4EBF;&amp;#x7F8E;&amp;#x5143;&amp;#xFF0C;&amp;#x8BE5;&amp;#x8D27;&amp;#x8F6E;&amp;#x7531;&amp;#x4E00;&amp;#x5BB6;&amp;#x65E5;&amp;#x672C;&amp;#x516C;&amp;#x53F8;&amp;#x6240;&amp;#x6709;&amp;#xFF0C;&amp;#x7531;&amp;#x4E00;&amp;#x5BB6;&amp;#x53F0;&amp;#x6E7E;&amp;#x4F01;&amp;#x4E1A;&amp;#x96C6;&amp;#x56E2;&amp;#x5305;&amp;#x79DF;&amp;#xFF0C;&amp;#x7531;&amp;#x5FB7;&amp;#x56FD;&amp;#x8FD0;&amp;#x8425;&amp;#x5546;&amp;#x7BA1;&amp;#x7406;&amp;#xFF0C;&amp;#x7531;&amp;#x5728;&amp;#x5DF4;&amp;#x62FF;&amp;#x9A6C;&amp;#x6CE8;&amp;#x518C;&amp;#xFF0C;&amp;#x5E76;&amp;#x7531;&amp;#x5370;&amp;#x5EA6;&amp;#x8239;&amp;#x5458;&amp;#x9A7E;&amp;#x9A76;&amp;#x5728;&amp;#x57C3;&amp;#x53CA;&amp;#x8FC7;&amp;#x5883;&lt;/p&gt;
-&lt;p&gt;&amp;#x4FFA;&amp;#x4E0D;&amp;#x4EC5;&amp;#x4EC5;&amp;#x751F;&amp;#x6D3B;&amp;#x5728;&amp;#x4E00;&amp;#x4E2A;&amp;#x9B54;&amp;#x5E7B;&amp;#x7684;&amp;#x56FD;&amp;#x5EA6;&amp;#xFF0C;&amp;#x66F4;&amp;#x5904;&amp;#x4E8E;&amp;#x4E00;&amp;#x4E2A;&amp;#x9B54;&amp;#x5E7B;&amp;#x7684;&amp;#x4E16;&amp;#x754C;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;#x4ECA;&amp;#x5929;&amp;#x770B;&amp;#x5230;&amp;#x7684;&amp;#x65B0;&amp;#x95FB;&amp;#xFF1A;&amp;#x57C3;&amp;#x53CA;&amp;#x62DF;&amp;#x5C31;&amp;#x957F;&amp;#x8D50;&amp;#x53F7;&amp;#x5835;&amp;#x8239;&amp;
-    
-    </summary>
-    
-    
-      <category term="闲扯" scheme="http://dj9399.github.io/tags/%E9%97%B2%E6%89%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>仙湖花展2</title>
-    <link href="http://dj9399.github.io/post/%E4%BB%99%E6%B9%96%E8%8A%B1%E5%B1%952/"/>
-    <id>http://dj9399.github.io/post/仙湖花展2/</id>
-    <published>2021-03-19T16:00:00.000Z</published>
-    <updated>2021-03-22T08:54:56.170Z</updated>
-    
-    <content type="html">&lt;p&gt;&amp;#x8FD9;&amp;#x662F;&amp;#x7EE7;2019&amp;#x5E74;&amp;#x540E;&amp;#x7B2C;&amp;#x4E8C;&amp;#x6B21;&amp;#x82B1;&amp;#x5C55;&amp;#xFF08;2020&amp;#x5E74;&amp;#x56E0;&amp;#x75AB;&amp;#x60C5;&amp;#x53D6;&amp;#x6D88;&amp;#xFF09;&amp;#xFF0C;&amp;#x6839;&amp;#x636E;&amp;#x4E0A;&amp;#x6B21;&amp;#x4EBA;&amp;#x591A;&amp;#x7ECF;&amp;#x9A8C;&amp;#xFF0C;&amp;#x4E8E;&amp;#x4E2D;&amp;#x5348;12&amp;#x70B9;&amp;#x8FDB;&amp;#x5165;&amp;#x56ED;&amp;#x533A;&amp;#xFF0C;&amp;#x4EBA;&amp;#x8FD8;&amp;#x662F;&amp;#x6709;&amp;#x70B9;&amp;#x591A;&lt;/p&gt;
-&lt;p&gt;&amp;#x5929;&amp;#x4E0A;&amp;#x4EBA;&amp;#x95F4;&amp;#x4E2D;&amp;#x5FC3;&amp;#x533A;&amp;#x7684;&amp;#x51E0;&amp;#x4F4D;&amp;#x8001;&amp;#x5916;&amp;#x7684;&amp;#x4F5C;&amp;#x54C1;&amp;#x6BD4;&amp;#x4E0A;&amp;#x5C4A;&amp;#x6C34;&amp;#x5E73;&amp;#x6574;&amp;#x4F53;&amp;#x4E00;&amp;#x81F4;&amp;#xFF0C;&amp;#x5176;&amp;#x5B83;&amp;#x5C55;&amp;#x533A;&amp;#x5C31;&amp;#x4E0D;&amp;#x884C;&amp;#x4E86;&amp;#xFF0C;&amp;#x975E;&amp;#x5E38;&amp;#x4E00;&amp;#x822C;&amp;#xFF0C;&amp;#x5076;&amp;#x6709;&amp;#x4EAE;&amp;#x773C;&amp;#x4E4B;&amp;#x4F5C;&amp;#x3002;&amp;#x6216;&amp;#x8BB8;&amp;#x662F;&amp;#x771F;&amp;#x6CA1;&amp;#x94B1;&amp;#x4E86;&amp;#xFF0C;&amp;#x6216;&amp;#x8BB8;&amp;#x662F;&amp;#x7B2C;&amp;#x4E00;&amp;#x5C4A;&amp;#x592A;&amp;#x60CA;&amp;#x8273;&amp;#x4EAE;&amp;#x773C;&amp;#x4E86;&lt;/p&gt;
-&lt;p&gt;&amp;#x9009;&amp;#x53D6;&amp;#x51E0;&amp;#x5E45;&amp;#x4E0D;&amp;#x9519;&amp;#x7684;&amp;#x653E;&amp;#x4E0A;&amp;#x6765;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/GVAf1IhWqKjJmNt.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/3oO2RwmyF1JrYkG.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/PLFy6bKmq5XJZrs.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/AZy4FbtQUaJeIPo.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/ATbpytz1w4aIVvD.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/RpWN1En2vVTtUq5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/xyVMf9u4DITq7gS.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/nKcjpRQvO9ZuXiS.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/YRhGDjrZPmTezKc.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/uqkTNjEYzcths7m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/Kv2SDFpbToH9AQj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/22/slVWEgSZdBQ5qnu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      仙湖花展2
-    
-    </summary>
-    
-    
-      <category term="徒步" scheme="http://dj9399.github.io/tags/%E5%BE%92%E6%AD%A5/"/>
     
   </entry>
   
