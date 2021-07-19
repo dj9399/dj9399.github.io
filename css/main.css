@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d5ed3e;
+  background: #1db9ac;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2033,6 +2033,14 @@ a.search-result {
   left: 44%;
   top: 42%;
   color: #ccc;
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active:before {
+  top: 0.7em;
 }
 .site-uv,
 .site-pv,
